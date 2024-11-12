@@ -1,0 +1,47 @@
+{
+  "main": {
+    "title": {
+      "line1": "Crafting a Sustainable Future,",
+      "line2": "One Spellbound Solution at a Time"
+    },
+    "description": "By choosing sustainable IT solutions, you're setting an example for your industry, customers, and competitors, showing that sustainable practices are not just good for the environment but also for business."
+  },
+
+  "benefits": {
+    "title": "How does this help your adventure?",
+    "items": {
+      "costs": {
+        "title": "Lower Operating Costs",
+        "description": "Sustainable IT solutions often mean transitioning energy-efficient systems and optimizing your technology stack. This can lower utility bills, extend the life of your equipment, and reduce costly downtimes."
+      },
+      "scalability": {
+        "title": "Scalability",
+        "description": "Sustainable IT consulting helps design flexible solutions that grow with your business, ensuring that as your needs evolve, your IT infrastructure remains efficient and eco-friendly."
+      },
+      "performance": {
+        "title": "Better System Performance",
+        "description": "Sustainable solutions focus on optimizing not just for the environment but also for efficiency and performance. You'll experience faster, leaner, and more reliable systems, helping you stay ahead of competitors."
+      }
+    }
+  },
+
+  "sustainability": {
+    "title": "What do you need to know for the journey?",
+    "keyPoints": {
+      "eWaste": {
+        "description": "Reducing E-Waste: By promoting longer-lasting IT equipment and systems that require less frequent upgrades, sustainable IT helps reduce electronic waste—one of the fastest-growing environmental hazards globally."
+      },
+      "carbonFootprint": {
+        "description": "Lower Carbon Footprint: The IT industry is a significant contributor to global energy consumption. Sustainable IT practices, such as transitioning to cloud solutions, optimizing server use, and reducing energy waste, can have a measurable impact on reducing greenhouse gas emissions."
+      },
+      "circularEconomy": {
+        "description": "Supporting the Circular Economy: Sustainable IT encourages reuse, refurbishment, and recycling of technology components, contributing to a circular economy where resources are maximized and waste minimized."
+      }
+    }
+  },
+
+  "contact": {
+    "title": "Let's talk about euipping you for your latest adventure",
+    "cta": "Yes please"
+  }
+}
