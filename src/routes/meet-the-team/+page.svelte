@@ -1,4 +1,4 @@
 <script>
 </script>
 
-<h2 class="text-sandcastle text-2xl">Meet the team!</h2>
+<h2 class="text-2xl text-sandcastle">Meet the team!</h2>
