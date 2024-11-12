@@ -16,12 +16,31 @@ const config = {
 		)
 	],
 	theme: {
-    extend: {
-      colors: {
-        customBrown: 'rgb(38, 33, 28)',
-      },
-    },
-  },
+		extend: {
+			colors: {
+				// Previous colors remain the same
+				black: '#000000',
+				void: '#000505',
+				fangorn: '#001410',
+				shire: '#02512D',
+				goblin: '#00DD8D',
+				sandcastle: '#FFEED6',
+				iceknife: '#06ABFD',
+				wizard: '#8B4EE5',
+				fairie: '#F3477D',
+				fireball: '#FF7430',
+				dragon: '#FFBE00',
+				
+				// New green shades
+				green: {
+					3: '#00301B',
+					5: '#08693B',
+					6: '#058A40',
+					7: '#3A8560',
+				},
+			},
+		},
+	},
 	plugins: [
 		// 4. Append the Skeleton plugin (after other plugins)
 		skeleton
