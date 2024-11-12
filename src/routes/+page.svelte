@@ -1,7 +1,9 @@
 <script>
-  import {Avatar} from '@skeletonlabs/skeleton'
+  import { t } from '$lib/translations/index';
+
+  const pageName = 'Home';
 </script>
 
-<div class="flex justify-center items-center h-screen w-screen bg-slate-700">
-  <span class="text-slate-300">Hello World</span>
+<div class="flex justify-center flex-col items-center h-screen w-screen bg-slate-700">
+  <h2>{$t('home.comingSoon')}</h2>
 </div>

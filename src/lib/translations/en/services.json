@@ -1,0 +1,60 @@
+{
+  "main": {
+    "title": {
+      "line1": "Every Great Tech Quest Deserves the Best Services",
+      "line2": "We've Got Them All"
+    }
+  },
+
+  "consulting": {
+    "title": "Consulting Services",
+    "description": "Our Consultation services are designed to guide you through the complexities of IT and sustainability. We provide expert advice on how to create and implement sustainable IT strategies, optimize resources, and align technology with environmental goals. Whether you're rethinking your digital infrastructure or looking to enhance your company's eco-credentials, our consultants offer insightful, customized guidance every step of the way.",
+    "cta": "Contact Us"
+  },
+
+  "mspTiers": {
+    "title": "Routes you can take your MSP journey",
+    "subtitle": "Here's a breakdown for each tier with a focus on progression in service depth and sustainability.",
+    "tiers": {
+      "scout": {
+        "name": "Scout",
+        "tagline": "Lightweight>tactical>versatile>package",
+        "description": {
+          "primary": "Our entry-level MSP package, The Scout, is designed for businesses seeking essential IT support with a sustainable focus. In this tier, we offer proactive monitoring, regular system updates, and basic cybersecurity measures to keep your operations running smoothly and securely.",
+          "secondary": "The Scout is ideal for companies just beginning their journey into sustainable IT management, ensuring reliable performance and immediate issue response."
+        }
+      },
+      "ranger": {
+        "name": "Ranger",
+        "tagline": "Advanced Support>cybersecurity>package",
+        "description": {
+          "primary": "The Ranger package builds on the foundation of The Scout, providing advanced support for businesses aiming for greater IT stability and environmental impact. In addition to proactive monitoring and updates, The Ranger includes enhanced cybersecurity, remote troubleshooting, and optimization of energy consumption across devices.",
+          "secondary": "This mid-tier package is crafted for businesses that want a balanced approach to IT management and sustainability, reducing waste while enhancing system resilience."
+        }
+      },
+      "vanguard": {
+        "name": "Vanguard",
+        "tagline": "End-to-end>IT strategy>package",
+        "description": {
+          "primary": "Our premier package, The Vanguard, offers comprehensive, end-to-end MSP services for businesses dedicated to full-scale sustainable IT operations. The Vanguard includes all services from The Scout and The Ranger, along with priority support, customized IT strategy planning, and in-depth sustainability assessments.",
+          "secondary": "This tier is perfect for companies committed to leading in both technology and sustainability, providing you with personalized, cutting-edge solutions to maximize operational efficiency and minimize environmental impact."
+        }
+      }
+    }
+  },
+
+  "addOns": {
+    "title": "Do you need extra equipment for your journey?",
+    "subtitle": "Seeking flexible support outside of a package? Here are our add-on services that can be tailored to meet specific needs without a long-term commitment.",
+    "reseller": {
+      "title": "Reseller",
+      "description": "As a Reseller, we provide access to a carefully curated selection of eco-friendly hardware, software, and tools that support sustainability in IT. From energy-efficient devices to environmentally responsible software solutions, we help your business choose technology that aligns with your sustainability values. Through our reseller services, you gain reliable access to quality products that reduce your environmental footprint and promote a greener workplace."
+    },
+    "cta": "Contact Us"
+  },
+
+  "companions": {
+    "title": "Want to take a look at our companions?",
+    "cta": "Yes please"
+  }
+}
