@@ -1,7 +1,4 @@
 <script>
-    import { t } from '$lib/translations/index';
-
-    const pageName = 'Home';
 </script>
 
 <div class="flex flex-col justify-center items-center h-screen w-screen bg-customBrown">
