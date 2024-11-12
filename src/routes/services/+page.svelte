@@ -1,7 +1,4 @@
 <script>
 </script>
 
-<div class="flex flex-col justify-center items-center h-screen w-screen bg-customBrown">
-    <img src="favicon.png" alt="logo" class="w-20 h-20" />
-    <h2 class="text-white text-2xl">Services</h2>
-</div>
+<h2 class="text-sandcastle text-2xl">Services</h2>

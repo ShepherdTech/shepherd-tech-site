@@ -1,10 +1,6 @@
 <script>
   import { t } from '$lib/translations/index';
 
-  const pageName = 'Home';
 </script>
 
-  <div class="flex flex-col justify-center items-center h-screen w-screen bg-black">
-    <img src="favicon.png" alt="logo" class="w-20 h-20" />
-    <h2 class="text-white text-2xl">{$t('home.comingSoon')}</h2>
-</div>
+<h2 class="text-sandcastle text-2xl">{$t('home.comingSoon')}</h2>
