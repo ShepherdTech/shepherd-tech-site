@@ -9,3 +9,4 @@ export const load: LayoutLoad = async ({ url }) => {
 
   return {};
 };
+export const prerender = true;

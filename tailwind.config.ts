@@ -16,8 +16,12 @@ const config = {
 		)
 	],
 	theme: {
-		extend: {},
-	},
+    extend: {
+      colors: {
+        customBrown: 'rgb(38, 33, 28)',
+      },
+    },
+  },
 	plugins: [
 		// 4. Append the Skeleton plugin (after other plugins)
 		skeleton

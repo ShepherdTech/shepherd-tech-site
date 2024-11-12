@@ -4,6 +4,7 @@
   const pageName = 'Home';
 </script>
 
-<div class="flex justify-center flex-col items-center h-screen w-screen bg-slate-700">
-  <h2>{$t('home.comingSoon')}</h2>
+  <div class="flex flex-col justify-center items-center h-screen w-screen bg-customBrown">
+    <img src="favicon.png" alt="logo" class="w-20 h-20" />
+    <h2 class="text-white text-2xl">{$t('home.comingSoon')}</h2>
 </div>
