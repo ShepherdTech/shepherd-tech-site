@@ -5,13 +5,11 @@
       "line2": "We've Got Them All"
     }
   },
-
   "consulting": {
     "title": "Consulting Services",
     "description": "Our Consultation services are designed to guide you through the complexities of IT and sustainability. We provide expert advice on how to create and implement sustainable IT strategies, optimize resources, and align technology with environmental goals. Whether you're rethinking your digital infrastructure or looking to enhance your company's eco-credentials, our consultants offer insightful, customized guidance every step of the way.",
     "cta": "Contact Us"
   },
-
   "mspTiers": {
     "title": "Routes you can take your MSP journey",
     "subtitle": "Here's a breakdown for each tier with a focus on progression in service depth and sustainability.",
@@ -42,7 +40,6 @@
       }
     }
   },
-
   "addOns": {
     "title": "Do you need extra equipment for your journey?",
     "subtitle": "Seeking flexible support outside of a package? Here are our add-on services that can be tailored to meet specific needs without a long-term commitment.",
@@ -52,7 +49,6 @@
     },
     "cta": "Contact Us"
   },
-
   "companions": {
     "title": "Want to take a look at our companions?",
     "cta": "Yes please"
