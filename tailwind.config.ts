@@ -24,6 +24,7 @@ const config = {
 				fangorn: '#001410',
 				shire: '#02512D',
 				goblin: '#00DD8D',
+				footerbg: "#091210",
 				sandcastle: '#FFEED6',
 				iceknife: '#06ABFD',
 				wizard: '#8B4EE5',
