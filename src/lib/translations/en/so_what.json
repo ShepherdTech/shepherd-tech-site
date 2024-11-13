@@ -6,7 +6,6 @@
     },
     "description": "By choosing sustainable IT solutions, you're setting an example for your industry, customers, and competitors, showing that sustainable practices are not just good for the environment but also for business."
   },
-
   "benefits": {
     "title": "How does this help your adventure?",
     "items": {
@@ -24,7 +23,6 @@
       }
     }
   },
-
   "sustainability": {
     "title": "What do you need to know for the journey?",
     "keyPoints": {
@@ -39,7 +37,6 @@
       }
     }
   },
-
   "contact": {
     "title": "Let's talk about euipping you for your latest adventure",
     "cta": "Yes please"
