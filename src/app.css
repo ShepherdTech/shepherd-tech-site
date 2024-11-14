@@ -2,6 +2,54 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@font-face {
+  font-family: 'Squil';
+  src: url('Squil-Light.woff2') format('woff2');
+  font-weight: 300; /* matches Tailwind's font-light */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Squil';
+  src: url('Squil-Medium.woff2') format('woff2');
+  font-weight: 400; /* Corrected: matches Tailwind's font-normal/medium */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Squil';
+  src: url('Squil-Bold.woff2') format('woff2');
+  font-weight: 700; /* matches Tailwind's font-bold */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lowdrag';
+  src: url('Lowdrag-Narrow.woff2') format('woff2');
+  font-weight: 300; /* matches Tailwind's font-light */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lowdrag';
+  src: url('Lowdrag-Regular.woff2') format('woff2');
+  font-weight: 400; /* Corrected: matches Tailwind's font-normal/medium */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lowdrag';
+  src: url('Lowdrag-Wide.woff2') format('woff2');
+  font-weight: 700; /* matches Tailwind's font-bold */
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
   h1 {
     @apply text-4xl font-bold mb-4;

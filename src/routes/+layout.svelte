@@ -9,6 +9,7 @@
 	<Header />
 
 	<main class="flex-1 pt-4">
+		<img src="favicon.png" alt="logo" class="h-20 w-20" />
 		<slot />
 	</main>
 
