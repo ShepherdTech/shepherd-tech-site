@@ -1,11 +1,9 @@
 {
   "comingSoon": "Coming Soon",
-  
   "testimonials": {
     "title": "Testimonials",
     "subtitle": "Tales from our adventures"
   },
-
   "companions": {
     "title": "Want to take a look at our companions?",
     "buttonText": "Yes please"

@@ -1,11 +1,10 @@
 <script lang="ts">
-	import { onMount } from "svelte";
+  import { onMount } from 'svelte';
 
   const navItems = [
-    { href: "/", label: "Home" },
-    { href: "/services", label: "Services" },
-    { href: "/so-what", label: "So What?"},
-    { href: "/meet-the-team", label: "Meet the Team" }
+    { href: '/services', label: 'Services' },
+    { href: '/so-what', label: 'So What?' },
+    { href: '/meet-the-team', label: 'Meet the Team' }
   ];
 
   let scrollY: number;
@@ -25,25 +24,28 @@
 
 <header
   bind:this={header}
-  class="fixed top-0 left-0 right-0 z-50 transition-all duration-200 px-8 py-4 flex justify-between items-center border-b {isScrolled ? 'bg-black/80 backdrop-blur-sm border-gray-800' : 'bg-black border-transparent'}"
+  class="fixed left-0 right-0 top-0 z-50 flex items-center justify-between border-b px-8 py-4 transition-all duration-200 {isScrolled
+    ? 'border-gray-800 bg-black/80 backdrop-blur-sm'
+    : 'border-transparent bg-black'}"
 >
-  <nav class="flex gap-6">
-    {#each navItems as {href, label}}
-      <a 
-        {href} 
-        class="text-goblin hover:text-sandcastle transition-colors text-sm"
-      >
+  <nav class="flex flex-1 gap-6">
+    {#each navItems as { href, label }}
+      <a {href} class="text-sm text-goblin transition-colors hover:text-sandcastle">
         {label}
       </a>
     {/each}
   </nav>
 
-  <div class="text-sandcastle text-xl font-bold">
+  <a
+    href="/"
+    class="absolute left-1/2 -translate-x-1/2 cursor-pointer text-xl font-bold text-sandcastle transition-colors hover:text-goblin"
+  >
     ShepherdTech
-  </div>
-
-  <div>
-    <button class="px-4 py-2 border-2 border-goblin text-sandcastle rounded-full text-sm hover:bg-green-700/10 hover:text-green-400 hover:border-green-600 transition-all duration-200">
+  </a>
+  <div class="flex flex-1 justify-end">
+    <button
+      class="rounded-full border-2 border-goblin px-4 py-2 text-sm text-sandcastle transition-all duration-200 hover:border-green-600 hover:bg-green-700/10 hover:text-green-400"
+    >
       Contact
     </button>
   </div>
