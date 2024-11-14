@@ -30,7 +30,10 @@
 >
   <nav class="flex flex-1 gap-6">
     {#each navItems as { href, label }}
-      <a {href} class="text-sm text-goblin transition-colors hover:text-sandcastle">
+      <a
+        {href}
+        class="font-squil text-sm font-bold text-goblin transition-colors hover:text-sandcastle"
+      >
         {label}
       </a>
     {/each}
