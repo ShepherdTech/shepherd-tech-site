@@ -10,7 +10,7 @@
 <div class="relative">
   <!-- Main container with thick border -->
   <div
-    class="relative h-40 w-full border-4 border-shire p-4 {className} {hasBanner
+    class="relative h-auto w-full border-4 border-shire p-4 {className} {hasBanner
       ? 'pt-0'
       : 'pt-10'}"
   >

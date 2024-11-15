@@ -3,7 +3,9 @@
 </script>
 
 <GreenBox class="text-white" hasBanner hasDiamonds>
-  <h1 class="text-4xl font-bold">Page</h1>
+  <div class="mt-36 flex w-full flex-col justify-center">
+    <h1 class="text-center text-4xl font-bold">Oooooo yea</h1>
 
-  <p class="mt-4">This is a page.</p>
+    <p class="mt-4 text-center">that's a nice box</p>
+  </div>
 </GreenBox>
