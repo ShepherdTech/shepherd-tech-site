@@ -1,88 +1,94 @@
 <script>
 	import Button from '$components/Button.svelte';
+	import GreenBox from '$components/GreenBox.svelte';
 	import SecondaryBox from '$components/SecondaryBox.svelte';
 	import { t } from '$lib/translations';
+
+  import { deviceTranslationKey } from '$lib/stores/mobile';
+
+  import Flag from '$components/Flag.svelte';
+  import Ribbon from '$components/Ribbon.svelte';
+  import ResponsiveImage from '$components/ResponsiveImage.svelte';
 </script>
 
-<div class="space-y-8 text-black">
-   <div class="relative border-shire border-solid border-[3px] h-[400px] mx-8 mt-8">
-    <div class="flex justify-between items-start">
-      <img class="-top-3 -left-3 relative" src="/star.svg" alt="star"/>
-      <img class="h-40 -top-8 relative" src="/Flag_Light_md.png" alt="Shepherd Tech Flag" />
-      <img class="-top-3 -right-3 relative" src="/star.svg" alt="star"/>
+<div class="space-y-4 md:space-y-8">
+  <GreenBox hasDiamonds hasBanner>
+    <div class="flex flex-col h-full md:flex-row items-center justify-between text-center mt-[100px] md:text-start p-4 md:px-12 md:pb-8 gap-y-6">
+      <div class="w-full md:w-2/3">
+        <h1 class="mb-0">{$t("so_what.main.title.line1")}</h1>
+        <h1 class="text-goblin">{$t('so_what.main.title.line2')}</h1>
+        <p class="text-base md:text-xl">{$t('so_what.main.description')}</p>
+      </div>
+      <img src="fortune-teller.png" alt="fortune teller" class="w-2/3 md:w-1/3"/>
     </div>
-   </div>
+  </GreenBox>
 
-   <section class="border-shire border-solid border-[3px] h-[820px] mx-8 flex text-sandcastle p-12 gap-x-6 flex-col">
-		<h2>{$t('so_what.benefits.title')}</h2>
-		<div class="flex justify-around gap-x-14">
-			<section class="flex flex-col text-center w-1/3 h-[600px] bg-shire border-goblin border-[3px] border-solid" style="clip-path: polygon(0 0, 0 100%, 50% 70%, 60% 60%, 50% 70%, 100% 100%, 100% 0%)">
-        <div class="flex flex-col p-4 gap-y-8">
+  <!-- How does this help your adventure -->
+   <GreenBox class="min-h-[900px] md:min-h-[400px]">
+    <div class="flex flex-col md:px-8 gap-y-8 md:gap-x-6">
+      <Ribbon title={$t('so_what.benefits.title')}/>
+      <div class="flex flex-col items-center md:flex-row md:items-start md:justify-around gap-y-8 md:gap-x-8 lg:gap-x-14">
+        <Flag class="md:-top-10 relative">
           <h3>{$t('so_what.benefits.items.costs.title')}</h3>
-          <p>{$t('so_what.benefits.items.costs.description')}</p>
-        </div>  
-			</section>
-			<section class="flex flex-col text-center w-1/3 h-[600px] mt-[100px] bg-shire border-goblin border-[3px] border-solid" style="clip-path: polygon(0 0, 0 100%, 50% 70%, 60% 60%, 50% 70%, 100% 100%, 100% 0%)">
-        <div class="flex flex-col p-4 gap-y-8">
-          <h3>
-            {$t('so_what.benefits.items.scalability.title')}
-          </h3>
-          <p>{$t('so_what.benefits.items.scalability.description')}</p>
-        </div>
-			</section>
-			<section class="flex flex-col text-center w-1/3 h-[600px] bg-shire border-goblin border-[3px] border-solid" style="clip-path: polygon(0 0, 0 100%, 50% 70%, 60% 60%, 50% 70%, 100% 100%, 100% 0%)">
-        <div class="flex flex-col p-4 gap-y-8">
+          <p>{$t(`so_what.benefits.items.costs.description.${$deviceTranslationKey}`)}</p>
+        </Flag>
+        <Flag class="mt-0 md:mt-[100px]">
+          <h3>{$t('so_what.benefits.items.scalability.title')}</h3>
+          <p>{$t(`so_what.benefits.items.scalability.description.${$deviceTranslationKey}`)}</p>
+        </Flag>
+        <Flag class="md:-top-10 relative">
           <h3>{$t('so_what.benefits.items.performance.title')}</h3>
-          <p>{$t('so_what.benefits.items.performance.description')}</p>
-        </div>
-			</section>
-		</div>
-	</section>
-
-	<section class="border-shire border-solid border-[3px] mx-8 flex text-sandcastle p-12 gap-x-6">
-    <div class="w-1/2 flex flex-col">
-      <h1 class="font-lowdrag text-sandcastle">{$t('so_what.sustainability.title')}</h1>
-      <img src="backpack.png" alt="backpack" class="max-h-[374px] self-end" />
+          <p>{$t(`so_what.benefits.items.performance.description.${$deviceTranslationKey}`)}</p>
+        </Flag>
+      </div>
     </div>
-		<div class="flex flex-col-reverse gap-4 md:flex-row md:gap-8 w-1/2">
-			<!-- List container -->
-			<div class="w-full">
-				<ul class="flex flex-col justify-around h-full">
-					<li class="flex items-center">
-            <img src="checkmark.svg" alt="checkmark" class="mr-4 h-16"/>
+	</GreenBox>
+
+  <!-- What do you need to know for your journey -->
+	<GreenBox>
+    <div class="flex flex-col md:flex-row md:p-8 gap-y-6 md:gap-x-6">
+      <div class="w-full md:w-1/2 flex flex-col">
+        <h1 class="font-lowdrag">{$t('so_what.sustainability.title')}</h1>
+        <ResponsiveImage src="backpack.png" alt="backpack" class="w-[40vw] min-w-[24px] md:max-w-[434px] self-center md:self-end" showOnMobile={false} />
+      </div>
+      <div class="flex flex-col w-full md:w-1/2">
+        <ul class="flex flex-col gap-y-6 md:gap-y-8">
+          <li class="flex items-center gap-x-4">
+            <img src="checkmark.svg" alt="checkmark" class="h-12 md:h-16"/>
             <div class="flex flex-col">
-              <h3>{$t('so_what.sustainability.keyPoints.eWaste.title')}</h3>
-              <p>{$t('so_what.sustainability.keyPoints.eWaste.description')}</p>
+              <h3 class="text-lg md:text-xl">{$t('so_what.sustainability.keyPoints.eWaste.title')}</h3>
+              <p>{$t(`so_what.sustainability.keyPoints.eWaste.description.${$deviceTranslationKey}`)}</p>
             </div>
           </li>
-          <li class="flex items-center">
-            <img src="checkmark.svg" alt="checkmark" class="mr-4 h-16"/>
+          <li class="flex items-center gap-x-4">
+            <img src="checkmark.svg" alt="checkmark" class="h-12 md:h-16"/>
             <div class="flex flex-col">
-              <h3>{$t('so_what.sustainability.keyPoints.carbonFootprint.title')}</h3>
-              <p>{$t('so_what.sustainability.keyPoints.carbonFootprint.description')}</p>
+              <h3 class="text-lg md:text-xl">{$t('so_what.sustainability.keyPoints.carbonFootprint.title')}</h3>
+              <p>{$t(`so_what.sustainability.keyPoints.carbonFootprint.description.${$deviceTranslationKey}`)}</p>
             </div>
           </li>
-          <li class="flex items-center">
-            <img src="checkmark.svg" alt="checkmark" class="mr-4 h-16" />
-              <div class="flex flex-col">
-                <h3>{$t('so_what.sustainability.keyPoints.circularEconomy.title')}</h3>
-                <p>{$t('so_what.sustainability.keyPoints.circularEconomy.description')}</p>
+          <li class="flex items-center gap-x-4">
+            <img src="checkmark.svg" alt="checkmark" class="h-12 md:h-16"/>
+            <div class="flex flex-col">
+              <h3 class="text-lg md:text-xl">{$t('so_what.sustainability.keyPoints.circularEconomy.title')}</h3>
+              <p>{$t(`so_what.sustainability.keyPoints.circularEconomy.description.${$deviceTranslationKey}`)}</p>
             </div>
           </li>
-				</ul>
-			</div>
-		</div>
-	</section>
+        </ul>
+        <ResponsiveImage src="backpack.png" alt="backpack" class="w-[40vw] min-w-[24px] md:max-w-[434px] self-center md:self-end" showOnMobile={true} />
+      </div>
+    </div>
+	</GreenBox>
 
   <SecondaryBox>
-    <div class="flex justify-between h-[300px] p-12">
-      <div class="w-1/2">
-        <h2>{$t('so_what.contact.title')}</h2>
-        <Button>
+    <div class="flex flex-col md:flex-row justify-between md:h-[300px] p-4 md:p-8 gap-y-6">
+      <div class="w-full md:w-1/2 flex flex-col md:block">
+        <h2 class="m-0">{$t('so_what.contact.title')}</h2>
+        <Button style="self-end">
           {$t('so_what.contact.cta')}
         </Button>
       </div>
-      <img src="equipment.svg" alt="Equipment" class="relative -top-12 h-[354px]" />
+      <ResponsiveImage src="equipment.svg" alt="Equipment" class="relative -top-4 h-[340px]" showOnMobile={false}/>
     </div>
   </SecondaryBox>
 </div>

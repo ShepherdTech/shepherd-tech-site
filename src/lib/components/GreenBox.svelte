@@ -7,12 +7,12 @@
   export { hasBanner }; // Export as 'hasBanner' prop
 </script>
 
-<div class="relative">
+<div class="relative text-sandcastle bg-fangorn">
   <!-- Main container with thick border -->
   <div
     class="relative h-auto w-full border-4 border-shire p-4 {className} {hasBanner
       ? 'pt-0'
-      : 'pt-10'}"
+      : 'md:pt-10'}"
   >
     {#if hasDiamonds}
       <!-- Top left circle and connector - hidden on mobile, visible from lg up -->
