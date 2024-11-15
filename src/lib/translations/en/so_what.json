@@ -11,15 +11,25 @@
     "items": {
       "costs": {
         "title": "Lower Operating Costs",
-        "description": "Sustainable IT solutions often mean transitioning energy-efficient systems and optimizing your technology stack. This can lower utility bills, extend the life of your equipment, and reduce costly downtimes."
+        "description": {
+          "desktop": "Sustainable IT solutions aren’t just good for the planet—they’re great for your coin purse too. Transitioning to energy-efficient systems and optimizing your tech stack can slash utility bills, extend the lifespan of your gear, and minimize costly downtimes. More savings, less waste, and fewer headaches—it’s a critical hit for your bottom line!",
+          "mobile": "Sustainable IT solutions often mean transitioning to energy-efficient systems and optimizing your technology stack. This can lower utility bills, extend the life of your equipment, and reduce costly downtimes."
+        }
       },
       "scalability": {
         "title": "Scalability",
-        "description": "Sustainable IT consulting helps design flexible solutions that grow with your business, ensuring that as your needs evolve, your IT infrastructure remains efficient and eco-friendly."
+        "description": {
+          "desktop": "Your IT should grow like your party—adding strength and versatility as your business expands. We help design flexible systems that adapt to your changing needs, ensuring your infrastructure stays efficient, resilient, and ready to tackle whatever challenges your next adventure brings.",
+          "mobile": "Sustainable IT consulting helps design flexible solutions that grow with your business, ensuring that as your needs evolve, your IT infrastructure remains efficient and eco-friendly."
+        }
+      
       },
       "performance": {
         "title": "Better System Performance",
-        "description": "Sustainable solutions focus on optimizing not just for the environment but also for efficiency and performance. You'll experience faster, leaner, and more reliable systems, helping you stay ahead of competitors."
+        "description": {
+          "desktop": "Sustainable solutions don’t just go green—they go fast. By optimizing for efficiency and performance, your systems become faster, leaner, and more reliable. It’s like swapping out rusty gear for enchanted equipment—you’ll stay a step ahead of your rivals and crush challenges with ease.",
+          "mobile": "Sustainable solutions focus on optimizing not just for the environment but also for efficiency and performance. You’ll experience faster, leaner, and more reliable systems, helping you stay ahead of competitors."
+        }
       }
     }
   },
@@ -27,18 +37,30 @@
     "title": "What do you need to know for the journey?",
     "keyPoints": {
       "eWaste": {
-        "description": "Reducing E-Waste: By promoting longer-lasting IT equipment and systems that require less frequent upgrades, sustainable IT helps reduce electronic waste—one of the fastest-growing environmental hazards globally."
+        "title": "Reducing E-Waste:",
+        "description": {
+          "desktop": "Sustainable IT keeps your gear fighting fit for longer, meaning fewer upgrades and less tech heading for the scrap heap. By extending the lifespan of your equipment, we tackle electronic waste—one of the fastest-growing environmental threats. Fewer discarded relics, more value for your party, and a greener world to quest in.",
+          "mobile": "Sustainable IT keeps your gear fighting fit for longer, meaning fewer upgrades and less tech heading for the scrap heap."
+        }
       },
       "carbonFootprint": {
-        "description": "Lower Carbon Footprint: The IT industry is a significant contributor to global energy consumption. Sustainable IT practices, such as transitioning to cloud solutions, optimizing server use, and reducing energy waste, can have a measurable impact on reducing greenhouse gas emissions."
+        "title": "Lower Carbon Footprint:",
+        "description": {
+          "desktop": "The IT industry is a significant contributor to global energy consumption. Sustainable IT practices, such as transitioning to cloud solutions, optimizing server use, and reducing energy waste, can have a measurable impact on reducing greenhouse gas emissions.",
+          "mobile": "The IT world can guzzle energy like a dragon hoarding gold, but sustainable practices—like moving to the cloud, optimizing servers, and reducing energy waste—help rein it in."
+        }
       },
       "circularEconomy": {
-        "description": "Supporting the Circular Economy: Sustainable IT encourages reuse, refurbishment, and recycling of technology components, contributing to a circular economy where resources are maximized and waste minimized."
+        "title": "Supporting the Circular Economy",
+        "description": {
+          "desktop": "Sustainable IT gives tech components a second, third, or even fourth life. Refurbish, reuse, and recycle—so your old gear doesn’t end up in the pit of forgotten relics. It’s about maximizing resources, minimizing waste, and creating a circular economy where every component has its role in the journey.",
+          "mobile": "Sustainable IT gives tech components a second, third, or even fourth life. Refurbish, reuse, and recycle—so your old gear doesn’t end up in the pit of forgotten relics."
+        }
       }
     }
   },
   "contact": {
-    "title": "Let's talk about euipping you for your latest adventure",
+    "title": "Let's talk about euipping you for your next adventure",
     "cta": "Yes please"
   }
 }

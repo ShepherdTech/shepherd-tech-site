@@ -8,7 +8,7 @@
 <div class="flex min-h-screen flex-col bg-black">
   <Header />
 
-  <main class="w-screen flex-1 p-8 pt-12">
+  <main class="w-screen flex-1 p-8 pt-12 overflow-hidden">
     <slot />
   </main>
 
