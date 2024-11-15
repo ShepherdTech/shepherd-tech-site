@@ -3,39 +3,79 @@
     "title": {
       "line1": "Every Great Tech Quest Deserves the Best Services",
       "line2": "We've Got Them All"
-    }
+    },
+    "description": "Legendary loot for all your IT adventure needs"
   },
   "consulting": {
     "title": "Consulting Services",
-    "description": "Our Consultation services are designed to guide you through the complexities of IT and sustainability. We provide expert advice on how to create and implement sustainable IT strategies, optimize resources, and align technology with environmental goals. Whether you're rethinking your digital infrastructure or looking to enhance your company's eco-credentials, our consultants offer insightful, customized guidance every step of the way.",
-    "cta": "Contact Us"
+    "description": "Our Consultation services are designed to guide you through the complexities of IT and sustainability. We provide expert advice on how to create and implement sustainable IT strategies, optimize resources, and align technology with environmental goals. Whether you're rethinking your digital infrastructure or looking to enhance your company’s eco-credentials, our consultants offer insightful, customized guidance every step of the way."
+  },
+  "professional": {
+    "title": "Professional Services",
+    "description": {
+      "part1": "Our Professional Services are like a skilled ranger guild, guiding you through every twist and turn of your business quest. Whether you need expert strategy to blaze a new trail, hands-on help to sharpen your operations, or direction to keep your IT in line with sustainability goals, we’re ready. ",
+      "part2": "From mapping out your journey to seeing you safely through, we ensure you’re equipped with the right tools, insights, and support to hit your targets—without missing a beat. "
+    }
+  },
+  "sustainable": {
+    "title": "Sustainable Technology Provider",
+    "description": {
+      "part1": "From energy-efficient gear to highly repairable, rock-solid options, our offerings make sure your tech arsenal is tough, cost-effective, and ready to brawl—without draining all the gold in your stash. Partnering with us means smashing through environmental impact, fortifying your defenses, and crafting a greener, smarter, future-ready workplace as sharp as a berserker’s axe. ",
+      "part2": "As a Sustainable Technology Provider (STP), we arm your business with eco-friendly hardware, software, cloud solutions, and AI-driven tools to help you crush sustainability challenges with the strength of a battle-ready berserker."
+    }
   },
   "mspTiers": {
-    "title": "Routes you can take your MSP journey",
+    "title": "campaigns for your MSP journey",
     "subtitle": "Here's a breakdown for each tier with a focus on progression in service depth and sustainability.",
     "tiers": {
       "scout": {
         "name": "Scout",
         "tagline": "Lightweight>tactical>versatile>package",
         "description": {
-          "primary": "Our entry-level MSP package, The Scout, is designed for businesses seeking essential IT support with a sustainable focus. In this tier, we offer proactive monitoring, regular system updates, and basic cybersecurity measures to keep your operations running smoothly and securely.",
-          "secondary": "The Scout is ideal for companies just beginning their journey into sustainable IT management, ensuring reliable performance and immediate issue response."
+          "primary": "Our entry-level MSP package, The Scout, sets your business on the right path with essential IT support and a sustainable focus. Think of it as your trusty companion for the journey ahead.",
+          "secondary": "Perfect for companies just starting their quest into modern, sustainable IT management—it keeps you prepared for whatever challenges lie ahead."
+        },
+        "points": {
+          "1": "Proactive system monitoring to catch and resolve issues before they impact your business.",
+          "2": "Regular updates to keep your system current and secure.",
+          "3": "Core cybersecurity defenses to protect against common threats.",
+          "4": "Support services to provide timely assistance whenever you need it",
+          "5": "Basic backup and disaster recovery to safeguard your data and ensure rapid recovery in case of disruptions."
         }
       },
       "ranger": {
         "name": "Ranger",
         "tagline": "Advanced Support>cybersecurity>package",
         "description": {
-          "primary": "The Ranger package builds on the foundation of The Scout, providing advanced support for businesses aiming for greater IT stability and environmental impact. In addition to proactive monitoring and updates, The Ranger includes enhanced cybersecurity, remote troubleshooting, and optimization of energy consumption across devices.",
-          "secondary": "This mid-tier package is crafted for businesses that want a balanced approach to IT management and sustainability, reducing waste while enhancing system resilience."
+          "primary": "Building on the strong foundation of The Scout, The Rangers package offers expanded support for those ready to venture deeper into the IT wilderness.",
+          "secondary": "This package is designed for those seeking to balance modernization, security, and sustainability—cutting down on waste, boosting system resilience, and staying nimble on any quest."
+        },
+        "points": {
+          "1": "Advanced backup and disaster recovery for robust data protection",
+          "2": "Remote troubleshooting to resolve issues quickly and efficiently",
+          "3": "Device energy optimization to reduce waste and boost efficiency",
+          "4": "Advanced data management solutions to keep your systems organized and effecive.",
+          "5": "Network and infrastructure management for enhanced connectivity and reliability.",
+          "6": "Compliance and regulatory support to keep you in line with industry standards.",
+          "7": "Cloud services management for seamless integration."
         }
       },
       "vanguard": {
         "name": "Vanguard",
         "tagline": "End-to-end>IT strategy>package",
         "description": {
-          "primary": "Our premier package, The Vanguard, offers comprehensive, end-to-end MSP services for businesses dedicated to full-scale sustainable IT operations. The Vanguard includes all services from The Scout and The Ranger, along with priority support, customized IT strategy planning, and in-depth sustainability assessments.",
-          "secondary": "This tier is perfect for companies committed to leading in both technology and sustainability, providing you with personalized, cutting-edge solutions to maximize operational efficiency and minimize environmental impact."
+          "primary": "For those ready to lead the charge, The Vanguard delivers end-to-end MSP services tailored for champions committed to total transformation. This top-tier package builds on every benefit of The Scout and The Rangers, adding a suite of advanced features designed to push your business to the front lines of innovation and sustainability. ",
+          "secondary": "The Vanguard transforms your business into a trailblazer of IT modernization, delivering custom, high-powered solutions that supercharge efficiency, reinforce your defenses, and champion a greener future. With this top-tier package, you’ll crush obstacles, outpace the competition, and lead with innovation—because why settle for following the pack when you can redefine the quest? "
+        },
+        "points": {
+          "1": "Priority support to ensure your needs are always addressed first.",
+          "2": "Custom IT strategy crafting tailored specifically to your business goals.",
+          "3": "Advanced cloud management and optimization for seamless, efficient cloud operations.",
+          "4": "Vendor management to streamline interactions with third-party providers.",
+          "5": "Advanced automation solutions to increase productivity and reduce manual work.",
+          "6": "Deep sustainability audits to evaluate and enhance your environmental impact.",
+          "7": "Advanced threat hunting and penetration testing to safeguard against complex security threats.",
+          "8": "Tailored end-user training and education to maximize security awareness and tech adoption across your team."
         }
       }
     }
