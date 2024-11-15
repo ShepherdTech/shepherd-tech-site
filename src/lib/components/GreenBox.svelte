@@ -7,12 +7,12 @@
   export { hasDiamonds, hasBanner, style }; // Export props
 </script>
 
-<div class="relative">
+<div class="relative bg-fangorn text-sandcastle">
   <!-- Main container with thick border -->
   <div
     class="relative h-auto w-full border-4 border-shire p-4 font-squil text-sandcastle {hasBanner
       ? 'pt-0'
-      : 'pt-10'} {className}"
+      : 'md:pt-10'} {className}"
     {style}
   >
     {#if hasDiamonds}
