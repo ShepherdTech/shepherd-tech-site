@@ -1,5 +1,9 @@
 <script>
-  import { t } from '$lib/translations/index';
+  import GreenBox from '$components/GreenBox.svelte';
 </script>
 
-<h2 class="text-2xl text-sandcastle">{$t('home.comingSoon')}</h2>
+<GreenBox class="text-white" hasBanner hasDiamonds>
+  <h1 class="text-4xl font-bold">Page</h1>
+
+  <p class="mt-4">This is a page.</p>
+</GreenBox>

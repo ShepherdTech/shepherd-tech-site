@@ -8,8 +8,7 @@
 <div class="flex min-h-screen flex-col bg-black">
   <Header />
 
-  <main class="flex-1 pt-4">
-    <img src="favicon.png" alt="logo" class="h-20 w-20" />
+  <main class="w-screen flex-1 p-8 pt-12">
     <slot />
   </main>
 
