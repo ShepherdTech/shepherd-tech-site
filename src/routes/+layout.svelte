@@ -1,17 +1,16 @@
 <script lang="ts">
-	import Header from '$components/Header.svelte';
-	import Footer from '$components/Footer.svelte';
+  import Header from '$components/Header.svelte';
+  import Footer from '$components/Footer.svelte';
 
-	import '../app.css';
+  import '../app.css';
 </script>
 
 <div class="flex min-h-screen flex-col bg-black">
-	<Header />
+  <Header />
 
-	<main class="flex-1 pt-4">
-		<img src="favicon.png" alt="logo" class="h-20 w-20" />
-		<slot />
-	</main>
+  <main class="w-screen flex-1 p-8 pt-12">
+    <slot />
+  </main>
 
-	<Footer />
+  <Footer />
 </div>
