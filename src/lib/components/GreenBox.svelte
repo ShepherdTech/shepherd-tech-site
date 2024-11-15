@@ -1,18 +1,19 @@
 <script lang="ts">
   let className = ''; // Prop to accept additional classes
   export { className as class }; // Export as 'class' prop
-  let hasDiamonds = false;
-  export { hasDiamonds }; // Export as 'hasDiamonds' prop
-  let hasBanner = false;
-  export { hasBanner }; // Export as 'hasBanner' prop
+  let hasDiamonds = false,
+    hasBanner = false,
+    style = '';
+  export { hasDiamonds, hasBanner, style }; // Export props
 </script>
 
 <div class="relative">
   <!-- Main container with thick border -->
   <div
-    class="relative h-auto w-full border-4 border-shire p-4 {className} {hasBanner
+    class="relative h-auto w-full border-4 border-shire p-4 font-squil text-sandcastle {hasBanner
       ? 'pt-0'
-      : 'pt-10'}"
+      : 'pt-10'} {className}"
+    {style}
   >
     {#if hasDiamonds}
       <!-- Top left circle and connector - hidden on mobile, visible from lg up -->
@@ -53,7 +54,7 @@
             <!-- Bottom half border -->
             <div
               class="absolute inset-0 rounded-full border-4 border-shire border-t-transparent"
-              style="clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%)"
+              style="clip-path: polygon(0 51.3%, 100% 51.3%, 100% 100%, 0 100%)"
             />
             <span class="relative" style="transform: translateY(20px);">MMX</span>
           </div>
@@ -66,7 +67,7 @@
             <!-- Bottom half border -->
             <div
               class="absolute inset-0 rounded-full border-4 border-shire border-t-transparent"
-              style="clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%)"
+              style="clip-path: polygon(0 51.3%, 100% 51.3%, 100% 100%, 0 100%)"
             />
             <span class="relative" style="transform: translateY(20px);">XIV</span>
           </div>

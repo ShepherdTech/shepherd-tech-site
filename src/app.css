@@ -52,18 +52,18 @@
 
 @layer base {
   h1 {
-    @apply text-4xl font-bold mb-4;
+    @apply mb-4 font-lowdrag text-6xl font-bold;
   }
 
   h2 {
-    @apply text-3xl font-semibold mb-3;
+    @apply mb-3 font-lowdrag text-4xl font-semibold;
   }
 
   h3 {
-    @apply text-2xl font-semibold mb-2;
+    @apply font-lowdrag text-xl font-semibold;
   }
 
-  h4 {
-    @apply text-xl font-semibold mb-2;
+  p {
+    @apply font-squil text-xl font-light;
   }
 }
