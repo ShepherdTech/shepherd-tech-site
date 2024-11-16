@@ -64,4 +64,4 @@
 </header>
 
 <!-- Spacer to prevent content from going under header -->
-<div class="h-[72px]"></div>
+<div class="h-[72px]" />

@@ -1,18 +1,19 @@
 <script lang="ts">
   let className = ''; // Prop to accept additional classes
   export { className as class }; // Export as 'class' prop
-  let hasDiamonds = false;
-  export { hasDiamonds }; // Export as 'hasDiamonds' prop
-  let hasBanner = false;
-  export { hasBanner }; // Export as 'hasBanner' prop
+  let hasDiamonds = false,
+    hasBanner = false,
+    style = '';
+  export { hasDiamonds, hasBanner, style }; // Export props
 </script>
 
 <div class="relative bg-fangorn text-sandcastle">
   <!-- Main container with thick border -->
   <div
-    class="relative h-auto w-full border-4 border-shire p-4 {className} {hasBanner
+    class="relative h-auto w-full border-4 border-shire p-4 font-squil text-sandcastle {hasBanner
       ? 'pt-0'
-      : 'md:pt-10'}"
+      : 'md:pt-10'} {className}"
+    {style}
   >
     {#if hasDiamonds}
       <!-- Top left circle and connector - hidden on mobile, visible from lg up -->
@@ -72,8 +73,16 @@
           </div>
         </div>
         <img src="Flag_Light_sm.png" alt="Banner" class="absolute top-[-25px] h-36 w-32" />
-        <img src="flag1.png" alt="Banner" class="absolute top-[24px] h-12 w-12 -translate-x-32" />
-        <img src="flag2.png" alt="Banner" class="absolute top-[24.1px] h-12 w-12 translate-x-32" />
+        <img
+          src="flag1.png"
+          alt="Banner"
+          class="absolute top-[24px] h-12 w-12 -translate-x-24 md:-translate-x-32"
+        />
+        <img
+          src="flag2.png"
+          alt="Banner"
+          class="absolute top-[24px] h-12 w-12 translate-x-24 md:translate-x-32"
+        />
         <div class="mt-2 h-1 w-full bg-shire"></div>
         <div class="mt-2 h-1 w-[80%] bg-shire"></div>
       </div>
