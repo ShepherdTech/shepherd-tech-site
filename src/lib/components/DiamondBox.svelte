@@ -58,4 +58,9 @@
   .diamond:hover {
     transform: scale(1.1);
   }
+  @media (max-width: 768px) {
+    .row-container {
+      display: none;
+    }
+  }
 </style>

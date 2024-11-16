@@ -73,8 +73,16 @@
           </div>
         </div>
         <img src="Flag_Light_sm.png" alt="Banner" class="absolute top-[-25px] h-36 w-32" />
-        <img src="flag1.png" alt="Banner" class="absolute top-[24px] h-12 w-12 -translate-x-32" />
-        <img src="flag2.png" alt="Banner" class="absolute top-[24.1px] h-12 w-12 translate-x-32" />
+        <img
+          src="flag1.png"
+          alt="Banner"
+          class="absolute top-[24px] h-12 w-12 -translate-x-24 md:-translate-x-32"
+        />
+        <img
+          src="flag2.png"
+          alt="Banner"
+          class="absolute top-[24px] h-12 w-12 translate-x-24 md:translate-x-32"
+        />
         <div class="mt-2 h-1 w-full bg-shire"></div>
         <div class="mt-2 h-1 w-[80%] bg-shire"></div>
       </div>

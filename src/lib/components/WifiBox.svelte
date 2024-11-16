@@ -1,15 +1,24 @@
 <script>
+  /**
+   * @type {number}
+   */
   let containerWidth;
+  /**
+   * @type {number}
+   */
   let containerHeight;
   let container;
 
   $: numberOfHorizontalImages = calculateNumberOfImages(containerWidth, false);
-  $: numberOfVerticalImages = calculateNumberOfImages(containerHeight, true);
+  // $: numberOfVerticalImages = calculateNumberOfImages(containerHeight, true);
 
+  /**
+   * @param {number} size
+   */
   function calculateNumberOfImages(size, isVertical = false) {
     if (!size) return 0;
-    const singleImageWidth = 107;
-    const overlap = isVertical ? 56 : 24; // 56 for vertical (-ml-14), 24 for horizontal (-ml-6)
+    const singleImageWidth = 80;
+    const overlap = isVertical ? 1 : 24; // 56 for vertical (-ml-14), 24 for horizontal (-ml-6)
     const effectiveWidth = singleImageWidth - overlap;
     return Math.ceil(size / effectiveWidth) - 1;
   }
@@ -30,7 +39,7 @@
             class="-ml-6 transition-transform first:ml-0"
             style:transform={index % 2 === 1 ? 'rotate(180deg)' : ''}
           >
-            <img src="wifi-thing.svg" alt="decorative border" class="h-[88px] w-[107px]" />
+            <img src="wifi-thing.svg" alt="decorative border" class="h-[4rem] w-[5rem]" />
           </div>
         {/each}
       </div>
@@ -44,14 +53,14 @@
             class="-ml-6 transition-transform first:ml-0"
             style:transform={index % 2 === 1 ? 'rotate(180deg)' : ''}
           >
-            <img src="wifi-thing.svg" alt="decorative border" class="h-[88px] w-[107px]" />
+            <img src="wifi-thing.svg" alt="decorative border" class="h-[4rem] w-[5rem]" />
           </div>
         {/each}
       </div>
     </div>
 
     <!-- Left Border -->
-    <div class="absolute -top-9 bottom-0 left-[3.75rem] origin-top-left rotate-90 overflow-hidden">
+    <!-- <div class="absolute -top-9 bottom-0 left-[3.75rem] origin-top-left rotate-90 overflow-hidden">
       <div class="flex h-full">
         {#each Array(numberOfVerticalImages) as _, index}
           <div
@@ -67,10 +76,10 @@
           </div>
         {/each}
       </div>
-    </div>
+    </div> -->
 
     <!-- Right Border -->
-    <div
+    <!-- <div
       class="absolute bottom-0 right-[3.75rem] top-5 origin-top-right -rotate-90 overflow-hidden"
     >
       <div class="flex h-full">
@@ -85,16 +94,14 @@
           </div>
         {/each}
       </div>
-    </div>
+    </div> -->
 
     <!-- Content Area -->
     <div
       class="relative z-10 flex h-full min-h-[500px] w-full items-center justify-center p-[176px]"
     >
-      <div class="flex h-full w-full items-center justify-center rounded-lg bg-white">
-        <slot>
-          <p class="text-xl text-gray-800">Content goes here</p>
-        </slot>
+      <div class="flex h-full w-full items-center justify-center rounded-lg">
+        <slot />
       </div>
     </div>
   </div>

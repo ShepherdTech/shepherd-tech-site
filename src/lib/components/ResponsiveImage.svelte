@@ -5,8 +5,9 @@
   export { className as class }; // Export as 'class' prop
   export let showOnMobile = true;
   import { isMobile } from '$lib/stores/mobile';
+  export let style = '';
 </script>
 
 {#if showOnMobile ? $isMobile : !$isMobile}
-  <img {src} {alt} class={className} />
+  <img {src} {alt} class={className} {style} />
 {/if}

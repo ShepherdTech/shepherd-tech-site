@@ -3,6 +3,13 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+body {
+  overflow-x: hidden;
+}
+::selection {
+  background-color: #06abfd; /* Light blue - you can change this color */
+  color: #000; /* Text color when selected */
+}
 @font-face {
   font-family: 'Squil';
   src: url('/Squil-Light.woff2') format('woff2');
