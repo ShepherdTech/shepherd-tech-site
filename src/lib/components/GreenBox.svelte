@@ -7,7 +7,7 @@
   export { hasBanner }; // Export as 'hasBanner' prop
 </script>
 
-<div class="relative text-sandcastle bg-fangorn">
+<div class="relative bg-fangorn text-sandcastle">
   <!-- Main container with thick border -->
   <div
     class="relative h-auto w-full border-4 border-shire p-4 {className} {hasBanner
@@ -53,7 +53,7 @@
             <!-- Bottom half border -->
             <div
               class="absolute inset-0 rounded-full border-4 border-shire border-t-transparent"
-              style="clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%)"
+              style="clip-path: polygon(0 50%, 100% 51.5%, 100% 100%, 0 100%)"
             />
             <span class="relative" style="transform: translateY(20px);">MMX</span>
           </div>
@@ -66,7 +66,7 @@
             <!-- Bottom half border -->
             <div
               class="absolute inset-0 rounded-full border-4 border-shire border-t-transparent"
-              style="clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%)"
+              style="clip-path: polygon(0 50%, 100% 51.5%, 100% 100%, 0 100%)"
             />
             <span class="relative" style="transform: translateY(20px);">XIV</span>
           </div>
