@@ -28,6 +28,6 @@ function createMobileStore() {
 }
 
 export const isMobile = createMobileStore();
-export const deviceTranslationKey = derived(isMobile, 
-  $isMobile => $isMobile ? 'mobile' : 'desktop'
+export const deviceTranslationKey = derived(isMobile, ($isMobile) =>
+  $isMobile ? 'mobile' : 'desktop'
 );
