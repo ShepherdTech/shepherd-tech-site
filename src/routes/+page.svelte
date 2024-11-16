@@ -3,6 +3,7 @@
   import DiamondBox from '$components/DiamondBox.svelte';
   import GreenBox from '$components/GreenBox.svelte';
   import Ribbon from '$components/Ribbon.svelte';
+  import WifiBox from '$components/WifiBox.svelte';
 
   let services = [
     {
@@ -12,10 +13,10 @@
         "Our Professional Services are like a skilled ranger guild, guiding you through every twist and turn of your business quest. Whether you need expert strategy to blaze a new trail, hands-on help to sharpen your operations, or direction to keep your IT in line with sustainability goals, we're ready."
     },
     {
-      title: 'MSP Services',
-      image: 'services-managed.png',
+      title: 'Consulting Services',
+      image: 'services-consulting.png',
       description:
-        'In the realm of managed IT services, our three-tiered MSP packages offer an ascending journey to unmatched support and protection. Choose your path and rise through the ranks of protection and innovation. The journey awaits!'
+        'Our Consultation services are here to guide you through the tangled forests of IT and sustainability—consider us your trusted druids, offering expert wisdom to craft and implement sustainable IT strategies, optimize resources, and align your tech with green goals.'
     },
     {
       title: 'Sustainable Technology Providers',
@@ -24,10 +25,10 @@
         'As a Sustainable Technology Provider (STP), we arm your business with eco-friendly hardware, software, cloud solutions, and AI-driven tools to help you crush sustainability challenges with the strength of a battle-ready berserker.'
     },
     {
-      title: 'Consulting Services',
-      image: 'services-consulting.png',
+      title: 'MSP Services',
+      image: 'services-managed.png',
       description:
-        'Our Consultation services are here to guide you through the tangled forests of IT and sustainability—consider us your trusted druids, offering expert wisdom to craft and implement sustainable IT strategies, optimize resources, and align your tech with green goals.'
+        'In the realm of managed IT services, our three-tiered MSP packages offer an ascending journey to unmatched support and protection. Choose your path and rise through the ranks of protection and innovation. The journey awaits!'
     }
   ];
 </script>
@@ -102,6 +103,8 @@
     </div>
   </GreenBox>
 </GreenBox>
+
+<!-- <WifiBox /> -->
 
 <style>
   .sustainable {
