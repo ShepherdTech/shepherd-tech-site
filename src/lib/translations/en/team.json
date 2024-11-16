@@ -1,3 +1,12 @@
 {
-  "main.title": "Your Fellowship of IT Wizards"
+  "main": {
+    "title": {
+      "line1": "Your Fellowship of",
+      "line2": "IT Wizards"
+    },
+    "description": {
+      "mobile": "Our crew of tech wizards, rogues, paladins, and more bring their unique skills to help you conquer every challenge.",
+      "desktop": "Our crew of tech wizards, rogues, paladins, and more bring their unique skills to help you conquer every challenge. From casting cybersecurity spells to crafting sustainable solutions, we’re your trusted allies."
+    }
+  }
 }

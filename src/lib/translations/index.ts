@@ -32,7 +32,7 @@ const generateLoadersForLocales = (locales: string[]) => {
       {
         locale,
         key: 'team',
-        routes: ['/team'],
+        routes: ['/meet-the-team'],
         loader: async () => (await import(`./${locale}/team.json`)).default
       }
     ];

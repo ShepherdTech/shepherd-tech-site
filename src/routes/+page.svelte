@@ -2,6 +2,7 @@
   import Button from '$components/Button.svelte';
   import DiamondBox from '$components/DiamondBox.svelte';
   import GreenBox from '$components/GreenBox.svelte';
+  import GreenSustainableBox from '$components/GreenSustainableBox.svelte';
   import ResponsiveImage from '$components/ResponsiveImage.svelte';
   import Ribbon from '$components/Ribbon.svelte';
   import SecondaryBox from '$components/SecondaryBox.svelte';
@@ -44,12 +45,12 @@
   <div class="mt-36 flex w-full flex-col items-center justify-center">
     <img
       src="diy_magical_graph.svg"
-      alt="Diamonds"
+      alt="Magic Graph"
       class="absolute -left-12 hidden w-2/5 max-w-[31rem] -translate-y-32 opacity-40 md:block"
     />
     <img
       src="diy_magical_graph.svg"
-      alt="Diamonds"
+      alt="Magic Graph"
       class="absolute right-6 hidden w-2/5 max-w-[31rem] translate-y-2 opacity-40 md:block"
     />
     <h2 class="font-squil text-xl font-light text-fireball">Powering your business with</h2>
@@ -62,13 +63,7 @@
   </div>
 </GreenBox>
 
-<GreenBox class="mt-0 flex justify-center bg-black" style="padding:0px">
-  <DiamondBox />
-  <p class="sustainable flex items-center whitespace-nowrap bg-shire pl-2 pr-2">
-    SUSTAINABLE COMPUTERING YOU CAN RELY ON
-  </p>
-  <DiamondBox />
-</GreenBox>
+<GreenSustainableBox />
 
 <GreenBox class="flex flex-col-reverse bg-black lg:flex-row">
   <div class="flex flex-1 items-center">
@@ -148,16 +143,6 @@
 </SecondaryBox>
 
 <style>
-  .sustainable {
-    font-family: Inter;
-    font-size: 0.55rem;
-    font-weight: 800;
-    line-height: 13px;
-    letter-spacing: 0.25em;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-  }
   .column-text {
     height: 100%;
     display: flex;
@@ -188,9 +173,6 @@
   @media (max-width: 768px) {
     .column-text h1 {
       font-size: 2rem /* 60px */;
-    }
-    .sustainable {
-      font-size: 0.4rem;
     }
   }
 </style>
