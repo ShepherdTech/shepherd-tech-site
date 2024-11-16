@@ -8,24 +8,25 @@
   },
   "consulting": {
     "title": "Consulting Services",
-    "description": "Our Consultation services are designed to guide you through the complexities of IT and sustainability. We provide expert advice on how to create and implement sustainable IT strategies, optimize resources, and align technology with environmental goals. Whether you're rethinking your digital infrastructure or looking to enhance your company’s eco-credentials, our consultants offer insightful, customized guidance every step of the way."
+    "description": {
+      "desktop": "Our Consultation services are designed to guide you through the complexities of IT and sustainability. We provide expert advice on how to create and implement sustainable IT strategies, optimize resources, and align technology with environmental goals. Whether you're rethinking your digital infrastructure or looking to enhance your company’s eco-credentials, our consultants offer insightful, customized guidance every step of the way.",
+      "mobile": "Our Consultation services are designed to guide you through the complexities of IT and sustainability. We provide expert advice on how to create and implement sustainable IT strategies, optimize resources, and align technology with environmental goals. "
+    }
   },
   "professional": {
     "title": "Professional Services",
     "description": {
-      "part1": "Our Professional Services are like a skilled ranger guild, guiding you through every twist and turn of your business quest. Whether you need expert strategy to blaze a new trail, hands-on help to sharpen your operations, or direction to keep your IT in line with sustainability goals, we’re ready. ",
-      "part2": "From mapping out your journey to seeing you safely through, we ensure you’re equipped with the right tools, insights, and support to hit your targets—without missing a beat. "
+      "mobile": "Our Professional Services are like a skilled ranger guild, guiding you through every twist and turn of your business quest. Whether you need expert strategy to blaze a new trail, hands-on help to sharpen your operations, or direction to keep your IT in line with sustainability goals, we’re ready."
     }
   },
   "sustainable": {
     "title": "Sustainable Technology Provider",
     "description": {
-      "part1": "From energy-efficient gear to highly repairable, rock-solid options, our offerings make sure your tech arsenal is tough, cost-effective, and ready to brawl—without draining all the gold in your stash. Partnering with us means smashing through environmental impact, fortifying your defenses, and crafting a greener, smarter, future-ready workplace as sharp as a berserker’s axe. ",
-      "part2": "As a Sustainable Technology Provider (STP), we arm your business with eco-friendly hardware, software, cloud solutions, and AI-driven tools to help you crush sustainability challenges with the strength of a battle-ready berserker."
+      "mobile": "From energy-efficient gear to highly repairable, rock-solid options, our offerings make sure your tech arsenal is tough, cost-effective, and ready to brawl—without draining all the gold in your stash. Partnering with us means smashing through environmental impact, fortifying your defenses, and crafting a greener, smarter, future-ready workplace as sharp as a berserker’s axe."
     }
   },
   "mspTiers": {
-    "title": "campaigns for your MSP journey",
+    "title": "Campaigns for your MSP journey",
     "subtitle": "Here's a breakdown for each tier with a focus on progression in service depth and sustainability.",
     "tiers": {
       "scout": {
@@ -64,6 +65,9 @@
         "name": "Vanguard",
         "tagline": "End-to-end>IT strategy>package",
         "description": {
+          "mobile": {
+            "description": "For those ready to lead the charge, The Vanguard delivers end-to-end MSP services tailored for champions committed to total transformation."
+          },
           "primary": "For those ready to lead the charge, The Vanguard delivers end-to-end MSP services tailored for champions committed to total transformation. This top-tier package builds on every benefit of The Scout and The Rangers, adding a suite of advanced features designed to push your business to the front lines of innovation and sustainability. ",
           "secondary": "The Vanguard transforms your business into a trailblazer of IT modernization, delivering custom, high-powered solutions that supercharge efficiency, reinforce your defenses, and champion a greener future. With this top-tier package, you’ll crush obstacles, outpace the competition, and lead with innovation—because why settle for following the pack when you can redefine the quest? "
         },
