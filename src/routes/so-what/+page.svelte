@@ -7,6 +7,7 @@
   import Flag from '$components/Flag.svelte';
   import Ribbon from '$components/Ribbon.svelte';
   import ResponsiveImage from '$components/ResponsiveImage.svelte';
+  import EquipmentSection from '$components/EquipmentSection.svelte';
 </script>
 
 <div class="space-y-4 md:space-y-8">

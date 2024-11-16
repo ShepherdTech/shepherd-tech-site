@@ -6,7 +6,7 @@
 </script>
 
 <div class="space-y-4 md:space-y-8">
-  <GreenBox hasDiamonds hasBanner>
+  <GreenBox hasDiamonds hasBanner class="bg-footerbg">
     <div
       class="mt-[100px] flex h-full flex-col items-center justify-between gap-y-2 text-center md:flex-row md:items-start md:px-12 md:pb-8 md:text-start"
     >
@@ -22,7 +22,7 @@
   </GreenBox>
 
   <!-- Services -->
-  <GreenBox class="flex flex-col space-y-6 md:space-y-10 md:p-12">
+  <GreenBox class="flex flex-col space-y-6 bg-footerbg md:space-y-10 md:p-12">
     <!-- Consulting -->
     <div class="flex items-center">
       <div class="space-y-2">
@@ -79,7 +79,7 @@
   </GreenBox>
 
   <!-- Packages -->
-  <GreenBox class="flex flex-col text-center">
+  <GreenBox class="flex flex-col bg-fangorn text-center">
     <div class="space-y-4 md:space-y-8 md:p-4">
       <h2>{$t('services.mspTiers.title')}</h2>
       <p>{$t('services.mspTiers.subtitle')}</p>
