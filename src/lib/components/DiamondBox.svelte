@@ -16,7 +16,7 @@
   }
 </script>
 
-<div class="row-container">
+<div class="row-container ml-3 mr-3">
   {#each Array(numDiamonds) as _, i}
     <svg
       width="18"
@@ -45,7 +45,7 @@
     gap: var(--gap, 10px);
     justify-content: center;
     width: 100%;
-    padding: 20px;
+    padding: 4px;
     box-sizing: border-box;
     overflow-x: hidden;
   }

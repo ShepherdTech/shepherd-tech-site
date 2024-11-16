@@ -2,6 +2,8 @@
   import Button from '$components/Button.svelte';
   import DiamondBox from '$components/DiamondBox.svelte';
   import GreenBox from '$components/GreenBox.svelte';
+  import Ribbon from '$components/Ribbon.svelte';
+  import { t } from '$lib';
 </script>
 
 <GreenBox
@@ -31,10 +33,47 @@
     <Button class="font-l mb-28 mt-12 w-fit bg-transparent font-lowdrag">Let's talk</Button>
   </div>
 </GreenBox>
-<GreenBox class="mt-0 flex justify-center" style="padding:0px">
+<GreenBox class="mt-0 flex justify-center bg-black" style="padding:0px">
   <DiamondBox />
-  <p class="flex items-center whitespace-nowrap bg-shire">
+  <p class="sustainable flex items-center whitespace-nowrap bg-shire pl-8 pr-8">
     SUSTAINABLE COMPUTERING YOU CAN RELY ON
   </p>
   <DiamondBox />
 </GreenBox>
+<GreenBox class="flex flex-col-reverse bg-black lg:flex-row">
+  <div class="flex-1">
+    <img src="equipment.svg" alt="Treasure" class="ml-10 h-auto w-full" />
+  </div>
+  <div class="flex flex-1 flex-col">
+    <div class="flex flex-1 flex-col items-center justify-center">
+      <img src="Logo_Light_sm.png" alt="ShepherdTech" class="mb-4 w-64" />
+      <h1 class="text-center text-6xl font-bold">Sustainable Tech</h1>
+      <h1 class="text-center text-6xl font-bold">You can trust.</h1>
+    </div>
+    <div class="flex flex-1 flex-col items-center justify-center text-goblin">
+      <h1 class="text-center text-7xl font-bold">Like Magic</h1>
+      <Button class="font-l mb-20  w-fit bg-transparent font-lowdrag">Learn more</Button>
+    </div>
+  </div>
+</GreenBox>
+<GreenBox class="bg-black" style="padding: 0.5rem">
+  <GreenBox class="flex justify-center bg-black">
+    <Ribbon
+      title="Every Great Tech Quest Deserves the Best Services We've Got Them All"
+      width="80%"
+    />
+  </GreenBox>
+</GreenBox>
+
+<style>
+  .sustainable {
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 13px;
+    letter-spacing: 0.25em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+</style>
