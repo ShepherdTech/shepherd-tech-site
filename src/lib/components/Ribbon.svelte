@@ -4,13 +4,13 @@
 </script>
 
 <div
-  class="ribbon relative z-10 min-h-[6rem] min-w-[300px] self-center bg-green-3 px-4 pb-[0.8em] text-center md:min-h-[8rem] md:px-[calc(1.8em+0.5em)]"
+  class="ribbon relative z-10 self-center bg-green-3 px-4 pb-[0.8em] text-center md:px-[calc(1.8em+0.5em)]"
   style="width: {width === 'auto' ? '100%' : width}; max-width: {width === 'auto'
     ? '760px'
     : 'none'};"
 >
-  <div class="ribbon-content">
-    <h2 class="relative top-3 mb-0">{title}</h2>
+  <div class="ribbon-content flex items-center justify-center">
+    <h2 class="my-4 w-full">{title}</h2>
   </div>
 </div>
 
@@ -61,13 +61,9 @@
   }
 
   .ribbon-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
     width: calc(100% - (var(--s) * 2));
-    text-align: center;
-    padding: 0 0.5em;
-    height: 100%;
+    margin: 0 auto;
+    min-height: 4rem;
   }
 </style>
