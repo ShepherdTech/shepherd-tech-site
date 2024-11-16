@@ -1,0 +1,57 @@
+<svg viewBox="-12 0 474 473" xmlns="http://www.w3.org/2000/svg">
+  <!-- Base styles -->
+  <style>
+    * {
+    fill: none;
+    }
+  </style>
+
+  <!-- Concentric Circles -->
+  <circle cx="225.126" cy="236.874" r="234.626" stroke="#34653F" stroke-width="3" />
+  <circle cx="225.5" cy="236.5" r="209.594" stroke="#34653F" stroke-width="3" />
+  <circle cx="225.5" cy="236.5" r="183.441" stroke="#34653F" stroke-width="3" />
+
+  <!-- Vertical and Horizontal Lines -->
+  <line x1="226.626" y1="0" x2="226.626" y2="25.406" stroke="#34653F" stroke-width="3" />
+  <line x1="226.626" y1="447.594" x2="226.626" y2="473" stroke="#34653F" stroke-width="3" />
+  <line x1="14.406" y1="235.385" x2="-11" y2="235.385" stroke="#34653F" stroke-width="3" />
+  <line x1="462" y1="238.374" x2="436.594" y2="238.374" stroke="#34653F" stroke-width="3" />
+
+  <!-- Rotated Square -->
+  <rect x="42.6806" y="237.238" width="258.532" height="258.532"
+    transform="rotate(-45 42.6806 237.238)" stroke="#34653F" stroke-width="3" />
+
+  <!-- Cross Lines -->
+  <line x1="225.879" y1="53.8009" x2="225.879" y2="422.188" stroke="#34653F" stroke-width="3" />
+  <path d="M43.5481 236.874L409.693 236.874" stroke="#34653F" stroke-width="3" />
+
+  <!-- Curved Corner Elements -->
+  <path
+    d="M125.818 153.087C104.995 134.697 89.0549 111.432 79.4245 85.3734L79.1845 84.724L79.8557 86.5402C89.1896 111.797 104.718 134.452 124.927 152.299L125.818 153.087Z"
+    stroke="#34653F" stroke-width="3" />
+  <path
+    d="M325.87 152.81C346.364 134.865 361.991 112.032 371.298 86.4318L371.538 85.771L370.889 87.5573C361.857 112.399 346.65 134.615 326.748 152.041L325.87 152.81Z"
+    stroke="#34653F" stroke-width="3" />
+  <path
+    d="M112.287 308.602C92.2169 326.246 76.8857 348.636 67.6932 373.728L67.4598 374.365L68.1009 372.615C77.016 348.28 91.943 326.486 111.427 309.358L112.287 308.602Z"
+    stroke="#34653F" stroke-width="3" />
+  <path
+    d="M336.044 308.618C355.986 327.427 371.744 350.225 382.293 375.527L382.489 375.997L381.76 374.248C371.621 349.93 356.164 327.595 336.894 309.42L336.044 308.618Z"
+    stroke="#34653F" stroke-width="3" />
+
+  <!-- Double Lines -->
+  <line x1="206.446" y1="117.31" x2="243.807" y2="117.31" stroke="#34653F" stroke-width="3" />
+  <line x1="206.446" y1="134.497" x2="243.807" y2="134.497" stroke="#34653F" stroke-width="3" />
+  <line x1="205.698" y1="362.404" x2="243.06" y2="362.404" stroke="#34653F" stroke-width="3" />
+  <line x1="205.698" y1="379.59" x2="243.06" y2="379.59" stroke="#34653F" stroke-width="3" />
+  <line x1="85.3879" y1="257.049" x2="85.3879" y2="219.687" stroke="#34653F" stroke-width="3" />
+  <line x1="102.574" y1="257.049" x2="102.574" y2="219.687" stroke="#34653F" stroke-width="3" />
+  <line x1="341.689" y1="256.302" x2="341.689" y2="218.94" stroke="#34653F" stroke-width="3" />
+  <line x1="358.876" y1="256.302" x2="358.876" y2="218.94" stroke="#34653F" stroke-width="3" />
+
+  <!-- Center Triangles -->
+  <path d="M275.666 192.792L226.247 236.368L176.828 192.792L275.666 192.792Z" stroke="#34653F"
+    stroke-width="3" />
+  <path d="M176.829 281.702L226.247 238.126L275.666 281.702H176.829Z" stroke="#34653F"
+    stroke-width="3" />
+</svg>

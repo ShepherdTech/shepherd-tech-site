@@ -1,10 +1,18 @@
+@import url('https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/inter.min.css');
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+body {
+  overflow-x: hidden;
+}
+::selection {
+  background-color: #06abfd; /* Light blue - you can change this color */
+  color: #000; /* Text color when selected */
+}
 @font-face {
   font-family: 'Squil';
-  src: url('Squil-Light.woff2') format('woff2');
+  src: url('/Squil-Light.woff2') format('woff2');
   font-weight: 300; /* matches Tailwind's font-light */
   font-style: normal;
   font-display: swap;
@@ -12,7 +20,7 @@
 
 @font-face {
   font-family: 'Squil';
-  src: url('Squil-Medium.woff2') format('woff2');
+  src: url('/Squil-Medium.woff2') format('woff2');
   font-weight: 400; /* Corrected: matches Tailwind's font-normal/medium */
   font-style: normal;
   font-display: swap;
@@ -20,7 +28,7 @@
 
 @font-face {
   font-family: 'Squil';
-  src: url('Squil-Bold.woff2') format('woff2');
+  src: url('/Squil-Bold.woff2') format('woff2');
   font-weight: 700; /* matches Tailwind's font-bold */
   font-style: normal;
   font-display: swap;
@@ -28,7 +36,7 @@
 
 @font-face {
   font-family: 'Lowdrag';
-  src: url('Lowdrag-Narrow.woff2') format('woff2');
+  src: url('/Lowdrag-Narrow.woff2') format('woff2');
   font-weight: 300; /* matches Tailwind's font-light */
   font-style: normal;
   font-display: swap;
@@ -36,7 +44,7 @@
 
 @font-face {
   font-family: 'Lowdrag';
-  src: url('Lowdrag-Regular.woff2') format('woff2');
+  src: url('/Lowdrag-Regular.woff2') format('woff2');
   font-weight: 400; /* Corrected: matches Tailwind's font-normal/medium */
   font-style: normal;
   font-display: swap;
@@ -44,7 +52,7 @@
 
 @font-face {
   font-family: 'Lowdrag';
-  src: url('Lowdrag-Wide.woff2') format('woff2');
+  src: url('/Lowdrag-Wide.woff2') format('woff2');
   font-weight: 700; /* matches Tailwind's font-bold */
   font-style: normal;
   font-display: swap;
@@ -52,18 +60,18 @@
 
 @layer base {
   h1 {
-    @apply text-3xl md:text-5xl lg:text-6xl font-bold mb-4 font-lowdrag;
+    @apply mb-4 font-lowdrag text-3xl font-bold md:text-5xl lg:text-6xl;
   }
 
   h2 {
-    @apply text-2xl leading-5 md:text-3xl lg:text-4xl font-semibold mb-3 font-lowdrag;
+    @apply mb-3 font-lowdrag text-2xl font-semibold leading-5 md:text-3xl lg:text-4xl;
   }
 
   h3 {
-    @apply text-base md:text-xl lg:text-xl font-semibold font-lowdrag;
+    @apply font-lowdrag text-base font-semibold md:text-xl lg:text-xl;
   }
 
   p {
-    @apply text-xs md:text-lg lg:text-xl font-squil font-light;
+    @apply font-squil text-xs font-light md:text-lg lg:text-xl;
   }
 }

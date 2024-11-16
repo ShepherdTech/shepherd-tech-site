@@ -32,6 +32,7 @@ const config = {
         fairie: '#F3477D',
         fireball: '#FF7430',
         dragon: '#FFBE00',
+        somerandomgreen: '#71D595',
 
         // New green shades
         green: {
