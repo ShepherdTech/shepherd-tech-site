@@ -40,6 +40,9 @@ const config = {
           6: '#058A40',
           7: '#3A8560'
         }
+      },
+      screens: {
+        xxs: '375px'
       }
     }
   },

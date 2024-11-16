@@ -22,7 +22,6 @@
           "desktop": "Your IT should grow like your party—adding strength and versatility as your business expands. We help design flexible systems that adapt to your changing needs, ensuring your infrastructure stays efficient, resilient, and ready to tackle whatever challenges your next adventure brings.",
           "mobile": "Sustainable IT consulting helps design flexible solutions that grow with your business, ensuring that as your needs evolve, your IT infrastructure remains efficient and eco-friendly."
         }
-      
       },
       "performance": {
         "title": "Better System Performance",
@@ -58,9 +57,5 @@
         }
       }
     }
-  },
-  "contact": {
-    "title": "Let's talk about euipping you for your next adventure",
-    "cta": "Yes please"
   }
 }
