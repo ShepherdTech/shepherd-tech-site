@@ -24,7 +24,7 @@
     },
     {
       name: 'Zack Muniz',
-      companionUri: '/team/zack-companion.png',
+      // companionUri: '/team/zack-companion.png',
       profileUri: '/team/zack.png',
       profilePosition: 'bottom',
       linkedinUri: 'https://www.linkedin.com/in/zack-muniz-187690233/'
@@ -45,7 +45,7 @@
     },
     {
       name: 'Tim Cutler',
-      companionUri: '/team/tim-companion.png',
+      // companionUri: '/team/tim-companion.png',
       profileUri: '/team/tim.png',
       profilePosition: 'bottom',
       linkedinUri: 'https://www.linkedin.com/in/timothycutler/'
@@ -126,7 +126,7 @@
         <div class="relative w-fit">
           <img
             class={`h-[151px] w-[99px] rounded-md border border-void object-cover md:h-[307px] md:w-[255px] xl:h-[337px] xl:w-[280px]`}
-            src={companionUri}
+            src={companionUri || '/team/placeholder.jpg'}
             alt={`${name} Companion`}
           />
           <a href={linkedinUri} target="_blank" rel="noopener noreferrer">

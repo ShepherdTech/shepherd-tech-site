@@ -3,7 +3,6 @@
   import { t } from '$lib/translations';
 
   import { deviceTranslationKey } from '$lib/stores/mobile';
-
   import Flag from '$components/Flag.svelte';
   import Ribbon from '$components/Ribbon.svelte';
   import ResponsiveImage from '$components/ResponsiveImage.svelte';
