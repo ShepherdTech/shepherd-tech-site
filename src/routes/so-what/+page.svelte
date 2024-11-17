@@ -15,14 +15,14 @@
 
 <GreenBox hasDiamonds hasBanner class="bg-footerbg">
   <div
-    class="mt-[40px] flex h-full flex-col justify-between gap-y-6 p-4 text-center md:mt-[120px] md:flex-row md:px-12 md:pb-8 md:text-start"
+    class="mt-[40px] flex h-full flex-col items-center justify-between gap-y-6 text-center md:mt-[120px] md:flex-row md:items-start md:px-12 md:pb-8 md:text-start"
   >
     <div class="w-full md:w-2/3">
       <h1 class="mb-0">{$t('so_what.main.title.line1')}</h1>
       <h1 class="text-goblin">{$t('so_what.main.title.line2')}</h1>
       <p class="text-base md:text-xl">{$t('so_what.main.description')}</p>
     </div>
-    <img src="fortune-teller.png" alt="fortune teller" class="w-2/3 md:w-1/3" />
+    <img src="fortune-teller.png" alt="fortune teller" class="w-2/3 self-center md:w-1/3" />
   </div>
 </GreenBox>
 
@@ -30,7 +30,7 @@
 
 <!-- How does this help your adventure -->
 <GreenBox class="min-h-[900px] md:min-h-[400px]">
-  <div class="mx-4 bg-footerbg outline outline-4 outline-offset-[-14px] outline-shire">
+  <div class="mx-2md:mx-4 bg-footerbg outline outline-4 outline-offset-[-14px] outline-shire">
     <div class="flex flex-col gap-y-8 md:gap-x-6 md:px-8">
       <Ribbon title={$t('so_what.benefits.title')} />
       <div
@@ -113,7 +113,7 @@
         <ResponsiveImage
           src="backpack.png"
           alt="backpack"
-          class="w-[40vw] min-w-[24px] self-center md:max-w-[434px] md:self-end"
+          class="mt-4 w-[40vw] min-w-[24px] self-center md:max-w-[434px] md:self-end"
           showOnMobile={true}
         />
       </div>
