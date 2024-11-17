@@ -11,7 +11,7 @@
 
 <GreenBox hasDiamonds hasBanner class="bg-footerbg">
   <div
-    class="mt-[40px] flex h-full flex-col items-center justify-between gap-y-2 text-center md:flex-row md:items-start md:px-12 md:pb-8 md:text-start"
+    class="mt-[40px] flex h-full flex-col items-center justify-between gap-y-2 text-center md:mt-[120px] md:flex-row md:items-start md:px-12 md:pb-8 md:text-start"
   >
     <div class="w-full md:w-2/3">
       <h1 class="mb-0">{$t('services.main.title.line1')}</h1>

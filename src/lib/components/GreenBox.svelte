@@ -24,7 +24,7 @@
           <!-- Quarter circle border with clipping -->
           <div
             class="absolute inset-0 rounded-full border-4 border-shire border-l-transparent border-t-transparent"
-            style="clip-path: polygon(50% 50%, 100% 45%, 100% 100%, 45% 100%)"
+            style="clip-path: polygon(50% 50%, 100% 46%, 100% 100%, 46% 100%)"
           />
           <img src="diamond.svg" alt="Diamonds" class="relative z-20 h-6 w-6" />
         </div>
@@ -38,7 +38,7 @@
           <!-- Quarter circle border with clipping -->
           <div
             class="absolute inset-0 rounded-full border-4 border-shire border-r-transparent border-t-transparent"
-            style="clip-path: polygon(0 45%, 50% 50%, 55% 100%, 0 100%)"
+            style="clip-path: polygon(0 46%, 50% 50%, 54% 100%, 0 100%)"
           />
           <img src="diamond.svg" alt="Diamonds" class="relative z-20 h-6 w-6" />
         </div>
@@ -54,7 +54,7 @@
             <!-- Bottom half border -->
             <div
               class="absolute inset-0 rounded-full border-4 border-shire border-t-transparent"
-              style="clip-path: polygon(0 50%, 100% 51.5%, 100% 100%, 0 100%)"
+              style="clip-path: polygon(0 52%, 100% 51.5%, 100% 100%, 0 100%)"
             />
             <span class="relative" style="transform: translateY(20px);">MMX</span>
           </div>
@@ -67,7 +67,7 @@
             <!-- Bottom half border -->
             <div
               class="absolute inset-0 rounded-full border-4 border-shire border-t-transparent"
-              style="clip-path: polygon(0 50%, 100% 51.5%, 100% 100%, 0 100%)"
+              style="clip-path: polygon(0 52%, 100% 51.5%, 100% 100%, 0 100%)"
             />
             <span class="relative" style="transform: translateY(20px);">XIV</span>
           </div>
