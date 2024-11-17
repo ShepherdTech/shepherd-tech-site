@@ -1,11 +1,40 @@
 {
-  "comingSoon": "Coming Soon",
-  "testimonials": {
-    "title": "Testimonials",
-    "subtitle": "Tales from our adventures"
+  "main": {
+    "intro": "POWERING YOUR BUSINESS WITH",
+    "title": "Tech Support Wizadry",
+    "subtitle": "At ShepherdTech we believe in equipping you on your quest for success with sustainable IT solutions.",
+    "contact": {
+      "cta": "Let's Talk"
+    }
   },
-  "companions": {
-    "title": "Want to take a look at our companions?",
-    "buttonText": "Yes please"
+  "services": {
+    "consulting": {
+      "title": "Consulting Services",
+      "description": {
+        "desktop": "Our Consultation services are here to guide you through the tangled forests of IT and sustainability—consider us your trusted druids, offering expert wisdom to craft and implement sustainable IT strategies, optimize resources, and align your tech with green goals.",
+        "mobile": "Our Consultation services are here to guide you through the tangled forests of IT and sustainability—consider us your trusted druids, offering expert wisdom to craft and implement sustainable IT strategies, optimize resources, and align your tech with green goals."
+      }
+    },
+    "professional": {
+      "title": "Professional Services",
+      "description": {
+        "desktop": "Our Professional Services are like a skilled ranger guild, guiding you through every twist and turn of your business quest. Whether you need expert strategy to blaze a new trail, hands-on help to sharpen your operations, or direction to keep your IT in line with sustainability goals, we’re ready.",
+        "mobile": "Our Professional Services are like a skilled ranger guild, guiding you through every twist and turn of your business quest."
+      }
+    },
+    "sustainable": {
+      "title": "Sustainable Technology Provider",
+      "description": {
+        "desktop": "As a Sustainable Technology Provider (STP), we arm your business with eco-friendly hardware, software, cloud solutions, and AI-driven tools to help you crush sustainability challenges with the strength of a battle-ready berserker.",
+        "mobile": "As a Sustainable Technology Provider (STP), we arm your business with eco-friendly hardware, software, cloud solutions, and AI-driven tools to help you crush sustainability challenges with the strength of a battle-ready berserker."
+      }
+    },
+    "msp": {
+      "title": "MSP Services",
+      "description": {
+        "desktop": "In the realm of managed IT services, our three-tiered MSP packages offer an ascending journey to unmatched support and protection. Choose your path and rise through the ranks of protection and innovation. The journey awaits!",
+        "mobile": "In the realm of managed IT services, our three-tiered MSP packages offer an ascending journey to unmatched support and protection."
+      }
+    }
   }
 }
