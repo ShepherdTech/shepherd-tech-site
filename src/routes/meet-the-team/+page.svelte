@@ -76,7 +76,7 @@
 
 <GreenBox hasBanner hasDiamonds class="bg-footerbg">
   <div
-    class="mt-[40px] flex h-full flex-col items-center justify-between text-center md:flex-row md:items-start md:px-12 md:pb-8 md:text-start"
+    class="mt-[40px] flex h-full flex-col items-center justify-between text-center md:mt-[120px] md:flex-row md:items-start md:px-12 md:pb-8 md:text-start"
   >
     <!-- Content -->
     <div class="w-full md:w-2/3">
