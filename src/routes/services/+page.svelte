@@ -1,4 +1,5 @@
 <script lang="ts">
+  import EquipmentSection from '$components/EquipmentSection.svelte';
   import GreenBox from '$components/GreenBox.svelte';
   import GreenSustainableBox from '$components/GreenSustainableBox.svelte';
   import WifiRow from '$components/WifiRow.svelte';
@@ -83,262 +84,272 @@
   <WifiRow {containerWidth} />
 </div>
 
-<!-- Packages -->
-<GreenBox class="flex flex-col bg-fangorn text-center">
-  <div class="space-y-4 md:space-y-8 md:p-4">
-    <h2>{$t('services.mspTiers.title')}</h2>
-    <p>{$t('services.mspTiers.subtitle')}</p>
+<div class="space-y-4 md:space-y-8">
+  <!-- Packages -->
+  <GreenBox class="flex flex-col bg-fangorn text-center">
+    <div class="space-y-4 md:space-y-8 md:p-4">
+      <h2>{$t('services.mspTiers.title')}</h2>
+      <p>{$t('services.mspTiers.subtitle')}</p>
 
-    <!-- Mobile Layout -->
-    {#if $isMobile}
-      <div class="border border-solid border-sandcastle p-4">
-        <h2 class="text-start">{$t('services.mspTiers.tiers.scout.name')}</h2>
-        <div class="w-5/6 border-t-4 border-solid border-iceknife" />
-        <div class="mt-4 flex flex-col items-center space-y-4">
-          <img src="key.png" alt="Key" class="h-[112px]" />
-          <p>{$t('services.mspTiers.tiers.scout.description.primary')}</p>
-        </div>
-      </div>
-      <div class="border border-solid border-sandcastle p-4">
-        <h2 class="text-start">{$t('services.mspTiers.tiers.ranger.name')}</h2>
-        <div class="w-5/6 border-t-4 border-solid border-wizard" />
-        <div class="mt-4 flex flex-col items-center space-y-4">
-          <img src="chest.png" alt="Treasure Chest" class="h-[112px]" />
-          <p>{$t('services.mspTiers.tiers.ranger.description.primary')}</p>
-        </div>
-      </div>
-      <div class="border border-solid border-sandcastle p-4">
-        <h2 class="text-start">{$t('services.mspTiers.tiers.vanguard.name')}</h2>
-        <div class="w-5/6 border-t-4 border-solid border-fireball" />
-        <div class="mt-4 flex flex-col items-center space-y-4">
-          <img src="sword-in-stone.png" alt="Sword in Stone" class="h-[112px]" />
-          <p>{$t('services.mspTiers.tiers.vanguard.description.mobile.description')}</p>
-        </div>
-      </div>
-    {/if}
-
-    <!-- Desktop Layout -->
-    {#if !$isMobile}
-      <!-- Scout -->
-      <div class="flex items-center space-x-4 border border-solid border-sandcastle p-6 text-start">
-        <div class="w-[236px]">
-          <img src="key.png" alt="Key" />
-        </div>
-        <div class="space-y-4">
-          <div>
-            <h2 class="text-start">{$t('services.mspTiers.tiers.scout.name')}</h2>
-            <!-- Divider-->
-            <div class="w-1/3 border-t-4 border-solid border-iceknife" />
-            <p class="leading-0 text-[12px]">{$t('services.mspTiers.tiers.scout.tagline')}</p>
+      <!-- Mobile Layout -->
+      {#if $isMobile}
+        <div class="border border-solid border-sandcastle p-4">
+          <h2 class="text-start">{$t('services.mspTiers.tiers.scout.name')}</h2>
+          <div class="w-5/6 border-t-4 border-solid border-iceknife" />
+          <div class="mt-4 flex flex-col items-center space-y-4">
+            <img src="key.png" alt="Key" class="h-[112px]" />
+            <p>{$t('services.mspTiers.tiers.scout.description.primary')}</p>
           </div>
-          <div class="flex space-x-6">
-            <div class="w-1/2 space-y-4">
-              <p>{$t('services.mspTiers.tiers.scout.description.primary')}</p>
-              <p>{$t('services.mspTiers.tiers.scout.description.secondary')}</p>
+        </div>
+        <div class="border border-solid border-sandcastle p-4">
+          <h2 class="text-start">{$t('services.mspTiers.tiers.ranger.name')}</h2>
+          <div class="w-5/6 border-t-4 border-solid border-wizard" />
+          <div class="mt-4 flex flex-col items-center space-y-4">
+            <img src="chest.png" alt="Treasure Chest" class="h-[112px]" />
+            <p>{$t('services.mspTiers.tiers.ranger.description.primary')}</p>
+          </div>
+        </div>
+        <div class="border border-solid border-sandcastle p-4">
+          <h2 class="text-start">{$t('services.mspTiers.tiers.vanguard.name')}</h2>
+          <div class="w-5/6 border-t-4 border-solid border-fireball" />
+          <div class="mt-4 flex flex-col items-center space-y-4">
+            <img src="sword-in-stone.png" alt="Sword in Stone" class="h-[112px]" />
+            <p>{$t('services.mspTiers.tiers.vanguard.description.mobile.description')}</p>
+          </div>
+        </div>
+      {/if}
+
+      <!-- Desktop Layout -->
+      {#if !$isMobile}
+        <!-- Scout -->
+        <div
+          class="flex items-center space-x-4 border border-solid border-sandcastle p-6 text-start"
+        >
+          <div class="w-[236px]">
+            <img src="key.png" alt="Key" />
+          </div>
+          <div class="space-y-4">
+            <div>
+              <h2 class="text-start">{$t('services.mspTiers.tiers.scout.name')}</h2>
+              <!-- Divider-->
+              <div class="w-1/3 border-t-4 border-solid border-iceknife" />
+              <p class="leading-0 text-[12px]">{$t('services.mspTiers.tiers.scout.tagline')}</p>
             </div>
-            <ul class="flex flex-col justify-between">
-              <li class="flex space-x-2">
-                <Icon
-                  icon="fluent:diamond-20-filled"
-                  width={20}
-                  class="relative top-1 flex-shrink-0 text-iceknife"
-                />
-                <p>{$t('services.mspTiers.tiers.scout.points.1')}</p>
-              </li>
-              <li class="flex space-x-2">
-                <Icon
-                  icon="fluent:diamond-20-filled"
-                  width={20}
-                  class="relative top-1 flex-shrink-0 text-iceknife"
-                />
-                <p>{$t('services.mspTiers.tiers.scout.points.2')}</p>
-              </li>
-              <li class="flex space-x-2">
-                <Icon
-                  icon="fluent:diamond-20-filled"
-                  width={20}
-                  class="relative top-1 flex-shrink-0 text-iceknife"
-                />
-                <p>{$t('services.mspTiers.tiers.scout.points.3')}</p>
-              </li>
-              <li class="flex space-x-2">
-                <Icon
-                  icon="fluent:diamond-20-filled"
-                  width={20}
-                  class="relative top-1 flex-shrink-0 text-iceknife"
-                />
-                <p>{$t('services.mspTiers.tiers.scout.points.4')}</p>
-              </li>
-              <li class="flex space-x-2">
-                <Icon
-                  icon="fluent:diamond-20-filled"
-                  width={20}
-                  class="relative top-1 flex-shrink-0 text-iceknife"
-                />
-                <p>{$t('services.mspTiers.tiers.scout.points.5')}</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Ranger -->
-      <div class="flex items-center space-x-4 border border-solid border-sandcastle p-6 text-start">
-        <div class="w-[236px]">
-          <img src="chest.png" alt="Treasure Chest" />
-        </div>
-        <div class="space-y-4">
-          <div>
-            <h2 class="text-start">{$t('services.mspTiers.tiers.ranger.name')}</h2>
-            <!-- Divider-->
-            <div class="w-1/3 border-t-4 border-solid border-wizard" />
-            <p class="leading-0 text-[12px]">{$t('services.mspTiers.tiers.ranger.tagline')}</p>
-          </div>
-          <div class="flex space-x-6">
-            <div class="w-1/2 space-y-4">
-              <p>{$t('services.mspTiers.tiers.ranger.description.primary')}</p>
-              <p>{$t('services.mspTiers.tiers.ranger.description.secondary')}</p>
+            <div class="flex space-x-6">
+              <div class="w-1/2 space-y-4">
+                <p>{$t('services.mspTiers.tiers.scout.description.primary')}</p>
+                <p>{$t('services.mspTiers.tiers.scout.description.secondary')}</p>
+              </div>
+              <ul class="flex flex-col justify-between">
+                <li class="flex space-x-2">
+                  <Icon
+                    icon="fluent:diamond-20-filled"
+                    width={20}
+                    class="relative top-1 flex-shrink-0 text-iceknife"
+                  />
+                  <p>{$t('services.mspTiers.tiers.scout.points.1')}</p>
+                </li>
+                <li class="flex space-x-2">
+                  <Icon
+                    icon="fluent:diamond-20-filled"
+                    width={20}
+                    class="relative top-1 flex-shrink-0 text-iceknife"
+                  />
+                  <p>{$t('services.mspTiers.tiers.scout.points.2')}</p>
+                </li>
+                <li class="flex space-x-2">
+                  <Icon
+                    icon="fluent:diamond-20-filled"
+                    width={20}
+                    class="relative top-1 flex-shrink-0 text-iceknife"
+                  />
+                  <p>{$t('services.mspTiers.tiers.scout.points.3')}</p>
+                </li>
+                <li class="flex space-x-2">
+                  <Icon
+                    icon="fluent:diamond-20-filled"
+                    width={20}
+                    class="relative top-1 flex-shrink-0 text-iceknife"
+                  />
+                  <p>{$t('services.mspTiers.tiers.scout.points.4')}</p>
+                </li>
+                <li class="flex space-x-2">
+                  <Icon
+                    icon="fluent:diamond-20-filled"
+                    width={20}
+                    class="relative top-1 flex-shrink-0 text-iceknife"
+                  />
+                  <p>{$t('services.mspTiers.tiers.scout.points.5')}</p>
+                </li>
+              </ul>
             </div>
-            <ul class="flex flex-col justify-between">
-              <li class="flex space-x-2">
-                <Icon
-                  icon="fluent:diamond-20-filled"
-                  width={20}
-                  class="relative top-1 flex-shrink-0 text-wizard"
-                />
-                <p>{$t('services.mspTiers.tiers.ranger.points.1')}</p>
-              </li>
-              <li class="flex space-x-2">
-                <Icon
-                  icon="fluent:diamond-20-filled"
-                  width={20}
-                  class="relative top-1 flex-shrink-0 text-wizard"
-                />
-                <p>{$t('services.mspTiers.tiers.ranger.points.2')}</p>
-              </li>
-              <li class="flex space-x-2">
-                <Icon
-                  icon="fluent:diamond-20-filled"
-                  width={20}
-                  class="relative top-1 flex-shrink-0 text-wizard"
-                />
-                <p>{$t('services.mspTiers.tiers.ranger.points.3')}</p>
-              </li>
-              <li class="flex space-x-2">
-                <Icon
-                  icon="fluent:diamond-20-filled"
-                  width={20}
-                  class="relative top-1 flex-shrink-0 text-wizard"
-                />
-                <p>{$t('services.mspTiers.tiers.ranger.points.4')}</p>
-              </li>
-              <li class="flex space-x-2">
-                <Icon
-                  icon="fluent:diamond-20-filled"
-                  width={20}
-                  class="relative top-1 flex-shrink-0 text-wizard"
-                />
-                <p>{$t('services.mspTiers.tiers.ranger.points.5')}</p>
-              </li>
-              <li class="flex space-x-2">
-                <Icon
-                  icon="fluent:diamond-20-filled"
-                  width={20}
-                  class="relative top-1 flex-shrink-0 text-wizard"
-                />
-                <p>{$t('services.mspTiers.tiers.ranger.points.6')}</p>
-              </li>
-              <li class="flex space-x-2">
-                <Icon
-                  icon="fluent:diamond-20-filled"
-                  width={20}
-                  class="relative top-1 flex-shrink-0 text-wizard"
-                />
-                <p>{$t('services.mspTiers.tiers.ranger.points.7')}</p>
-              </li>
-            </ul>
           </div>
         </div>
-      </div>
 
-      <!-- Vanguard -->
-      <div class="flex items-center space-x-4 border border-solid border-sandcastle p-6 text-start">
-        <div class="w-[236px]">
-          <img src="sword-in-stone.png" alt="Sword In Stone" />
-        </div>
-        <div class="space-y-4">
-          <div>
-            <h2 class="text-start">{$t('services.mspTiers.tiers.vanguard.name')}</h2>
-            <!-- Divider-->
-            <div class="w-1/3 border-t-4 border-solid border-fireball" />
-            <p class="leading-0 text-[12px]">{$t('services.mspTiers.tiers.vanguard.tagline')}</p>
+        <!-- Ranger -->
+        <div
+          class="flex items-center space-x-4 border border-solid border-sandcastle p-6 text-start"
+        >
+          <div class="w-[236px]">
+            <img src="chest.png" alt="Treasure Chest" />
           </div>
-          <div class="flex space-x-6">
-            <div class="w-1/2 space-y-4">
-              <p>{$t('services.mspTiers.tiers.vanguard.description.primary')}</p>
-              <p>{$t('services.mspTiers.tiers.vanguard.description.secondary')}</p>
+          <div class="space-y-4">
+            <div>
+              <h2 class="text-start">{$t('services.mspTiers.tiers.ranger.name')}</h2>
+              <!-- Divider-->
+              <div class="w-1/3 border-t-4 border-solid border-wizard" />
+              <p class="leading-0 text-[12px]">{$t('services.mspTiers.tiers.ranger.tagline')}</p>
             </div>
-            <ul class="flex flex-col justify-between">
-              <li class="flex space-x-2">
-                <Icon
-                  icon="fluent:diamond-20-filled"
-                  width={20}
-                  class="relative top-1 flex-shrink-0 text-fireball"
-                />
-                <p>{$t('services.mspTiers.tiers.vanguard.points.1')}</p>
-              </li>
-              <li class="flex space-x-2">
-                <Icon
-                  icon="fluent:diamond-20-filled"
-                  width={20}
-                  class="relative top-1 flex-shrink-0 text-fireball"
-                />
-                <p>{$t('services.mspTiers.tiers.vanguard.points.2')}</p>
-              </li>
-              <li class="flex space-x-2">
-                <Icon
-                  icon="fluent:diamond-20-filled"
-                  width={20}
-                  class="relative top-1 flex-shrink-0 text-fireball"
-                />
-                <p>{$t('services.mspTiers.tiers.vanguard.points.3')}</p>
-              </li>
-              <li class="flex space-x-2">
-                <Icon
-                  icon="fluent:diamond-20-filled"
-                  width={20}
-                  class="relative top-1 flex-shrink-0 text-fireball"
-                />
-                <p>{$t('services.mspTiers.tiers.vanguard.points.4')}</p>
-              </li>
-              <li class="flex space-x-2">
-                <Icon
-                  icon="fluent:diamond-20-filled"
-                  width={20}
-                  class="relative top-1 flex-shrink-0 text-fireball"
-                />
-                <p>{$t('services.mspTiers.tiers.vanguard.points.5')}</p>
-              </li>
-              <li class="flex space-x-2">
-                <Icon
-                  icon="fluent:diamond-20-filled"
-                  width={20}
-                  class="relative top-1 flex-shrink-0 text-fireball"
-                />
-                <p>{$t('services.mspTiers.tiers.vanguard.points.6')}</p>
-              </li>
-              <li class="flex space-x-2">
-                <Icon
-                  icon="fluent:diamond-20-filled"
-                  width={20}
-                  class="relative top-1 flex-shrink-0 text-fireball"
-                />
-                <p>{$t('services.mspTiers.tiers.vanguard.points.7')}</p>
-              </li>
-            </ul>
+            <div class="flex space-x-6">
+              <div class="w-1/2 space-y-4">
+                <p>{$t('services.mspTiers.tiers.ranger.description.primary')}</p>
+                <p>{$t('services.mspTiers.tiers.ranger.description.secondary')}</p>
+              </div>
+              <ul class="flex flex-col justify-between">
+                <li class="flex space-x-2">
+                  <Icon
+                    icon="fluent:diamond-20-filled"
+                    width={20}
+                    class="relative top-1 flex-shrink-0 text-wizard"
+                  />
+                  <p>{$t('services.mspTiers.tiers.ranger.points.1')}</p>
+                </li>
+                <li class="flex space-x-2">
+                  <Icon
+                    icon="fluent:diamond-20-filled"
+                    width={20}
+                    class="relative top-1 flex-shrink-0 text-wizard"
+                  />
+                  <p>{$t('services.mspTiers.tiers.ranger.points.2')}</p>
+                </li>
+                <li class="flex space-x-2">
+                  <Icon
+                    icon="fluent:diamond-20-filled"
+                    width={20}
+                    class="relative top-1 flex-shrink-0 text-wizard"
+                  />
+                  <p>{$t('services.mspTiers.tiers.ranger.points.3')}</p>
+                </li>
+                <li class="flex space-x-2">
+                  <Icon
+                    icon="fluent:diamond-20-filled"
+                    width={20}
+                    class="relative top-1 flex-shrink-0 text-wizard"
+                  />
+                  <p>{$t('services.mspTiers.tiers.ranger.points.4')}</p>
+                </li>
+                <li class="flex space-x-2">
+                  <Icon
+                    icon="fluent:diamond-20-filled"
+                    width={20}
+                    class="relative top-1 flex-shrink-0 text-wizard"
+                  />
+                  <p>{$t('services.mspTiers.tiers.ranger.points.5')}</p>
+                </li>
+                <li class="flex space-x-2">
+                  <Icon
+                    icon="fluent:diamond-20-filled"
+                    width={20}
+                    class="relative top-1 flex-shrink-0 text-wizard"
+                  />
+                  <p>{$t('services.mspTiers.tiers.ranger.points.6')}</p>
+                </li>
+                <li class="flex space-x-2">
+                  <Icon
+                    icon="fluent:diamond-20-filled"
+                    width={20}
+                    class="relative top-1 flex-shrink-0 text-wizard"
+                  />
+                  <p>{$t('services.mspTiers.tiers.ranger.points.7')}</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    {/if}
-  </div>
-</GreenBox>
+
+        <!-- Vanguard -->
+        <div
+          class="flex items-center space-x-4 border border-solid border-sandcastle p-6 text-start"
+        >
+          <div class="w-[236px]">
+            <img src="sword-in-stone.png" alt="Sword In Stone" />
+          </div>
+          <div class="space-y-4">
+            <div>
+              <h2 class="text-start">{$t('services.mspTiers.tiers.vanguard.name')}</h2>
+              <!-- Divider-->
+              <div class="w-1/3 border-t-4 border-solid border-fireball" />
+              <p class="leading-0 text-[12px]">{$t('services.mspTiers.tiers.vanguard.tagline')}</p>
+            </div>
+            <div class="flex space-x-6">
+              <div class="w-1/2 space-y-4">
+                <p>{$t('services.mspTiers.tiers.vanguard.description.primary')}</p>
+                <p>{$t('services.mspTiers.tiers.vanguard.description.secondary')}</p>
+              </div>
+              <ul class="flex flex-col justify-between">
+                <li class="flex space-x-2">
+                  <Icon
+                    icon="fluent:diamond-20-filled"
+                    width={20}
+                    class="relative top-1 flex-shrink-0 text-fireball"
+                  />
+                  <p>{$t('services.mspTiers.tiers.vanguard.points.1')}</p>
+                </li>
+                <li class="flex space-x-2">
+                  <Icon
+                    icon="fluent:diamond-20-filled"
+                    width={20}
+                    class="relative top-1 flex-shrink-0 text-fireball"
+                  />
+                  <p>{$t('services.mspTiers.tiers.vanguard.points.2')}</p>
+                </li>
+                <li class="flex space-x-2">
+                  <Icon
+                    icon="fluent:diamond-20-filled"
+                    width={20}
+                    class="relative top-1 flex-shrink-0 text-fireball"
+                  />
+                  <p>{$t('services.mspTiers.tiers.vanguard.points.3')}</p>
+                </li>
+                <li class="flex space-x-2">
+                  <Icon
+                    icon="fluent:diamond-20-filled"
+                    width={20}
+                    class="relative top-1 flex-shrink-0 text-fireball"
+                  />
+                  <p>{$t('services.mspTiers.tiers.vanguard.points.4')}</p>
+                </li>
+                <li class="flex space-x-2">
+                  <Icon
+                    icon="fluent:diamond-20-filled"
+                    width={20}
+                    class="relative top-1 flex-shrink-0 text-fireball"
+                  />
+                  <p>{$t('services.mspTiers.tiers.vanguard.points.5')}</p>
+                </li>
+                <li class="flex space-x-2">
+                  <Icon
+                    icon="fluent:diamond-20-filled"
+                    width={20}
+                    class="relative top-1 flex-shrink-0 text-fireball"
+                  />
+                  <p>{$t('services.mspTiers.tiers.vanguard.points.6')}</p>
+                </li>
+                <li class="flex space-x-2">
+                  <Icon
+                    icon="fluent:diamond-20-filled"
+                    width={20}
+                    class="relative top-1 flex-shrink-0 text-fireball"
+                  />
+                  <p>{$t('services.mspTiers.tiers.vanguard.points.7')}</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      {/if}
+    </div>
+  </GreenBox>
+
+  <EquipmentSection />
+</div>

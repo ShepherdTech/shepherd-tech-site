@@ -62,7 +62,7 @@
 
     <p class="mt-4 w-[80%] md:w-[50%]">{$t('home.main.subtitle')}</p>
     <Button
-      class="mb-14 mt-12 w-fit bg-transparent font-lowdrag md:mb-28 md:mt-12"
+      class="z-50 mb-14 mt-12 w-fit bg-transparent font-lowdrag md:mb-28 md:mt-12"
       on:click={() =>
         modalStore.trigger({
           component: 'formModal',
@@ -143,7 +143,7 @@
     <div class="column-text">
       <img src="diamond.svg" alt="Diamonds" class="sm:block xl:hidden" />
       <h1 class="font-bold">100+ Years</h1>
-      <p class="text-somerandomgreen">of collectively team experience</p>
+      <p class="text-somerandomgreen">of collective team experience</p>
       <img src="diamond.svg" alt="Diamonds" class="hidden xl:block" />
     </div>
     <div class="column-text">
