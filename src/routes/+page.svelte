@@ -9,6 +9,8 @@
   import { t } from '$lib';
   import { deviceTranslationKey, isMobile } from '$lib/stores/mobile';
 
+  import { getModalStore } from '@skeletonlabs/skeleton';
+  const modalStore = getModalStore();
   $: services = [
     {
       title: $t('home.services.professional.title'),
@@ -55,7 +57,15 @@
     <h1 class="font-bold">Wizardry</h1>
 
     <p class="mt-4">{$t('home.main.subtitle')}</p>
-    <Button class="font-l mb-28 mt-12 w-fit font-lowdrag">Let's talk</Button>
+    <Button
+      class="font-l mb-28 mt-12 w-fit bg-transparent font-lowdrag"
+      on:click={() =>
+        modalStore.trigger({
+          component: 'formModal',
+          type: 'component',
+          title: "Let's Talk"
+        })}>Let's talk</Button
+    >
   </div>
 </GreenBox>
 

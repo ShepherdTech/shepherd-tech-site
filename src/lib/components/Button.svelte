@@ -1,7 +1,7 @@
 <script lang="ts">
   // Define allowed HTML button types
   export let type: 'button' | 'submit' | 'reset' = 'button';
-
+  export let disabled = false;
   // Allow external class additions
   let classes = '';
   export { classes as class };
@@ -13,6 +13,6 @@
   $: combinedClasses = classes ? `${baseClasses} ${classes}` : baseClasses;
 </script>
 
-<button {type} class={combinedClasses} on:click>
+<button {type} class={combinedClasses} on:click {disabled}>
   <slot></slot>
 </button>
