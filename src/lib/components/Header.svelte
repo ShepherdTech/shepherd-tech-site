@@ -4,6 +4,7 @@
   import { isTablet } from '$lib/stores/mobile';
   import MobileMenu from './MobileMenu.svelte';
   import { getModalStore } from '@skeletonlabs/skeleton';
+  import { currentPath } from '$lib/stores/page';
   const modalStore = getModalStore();
 
   const navItems = [
@@ -47,7 +48,10 @@
         {#each navItems as { href, label }}
           <a
             {href}
-            class="whitespace-nowrap text-sm text-goblin transition-colors hover:text-sandcastle"
+            class="whitespace-nowrap text-sm text-goblin transition-colors hover:text-sandcastle {$currentPath ===
+            href
+              ? 'text-sandcastle'
+              : ''}"
           >
             {label}
           </a>
