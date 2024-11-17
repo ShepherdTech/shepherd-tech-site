@@ -57,7 +57,12 @@ body {
   font-style: normal;
   font-display: swap;
 }
-
+.bg-surface-backdrop-token {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.modal-open {
+  overflow: hidden;
+}
 @layer base {
   h1 {
     @apply mb-4 font-lowdrag text-3xl font-bold md:text-5xl lg:text-6xl;

@@ -139,6 +139,12 @@
       isSubmitting = false;
     }
   }
+
+  $: if ($modalStore[0]) {
+    document.body.classList.add('modal-open');
+  } else {
+    document.body.classList.remove('modal-open');
+  }
 </script>
 
 {#if $modalStore[0]}
@@ -260,9 +266,12 @@
       {/if}
     </form>
     <footer class="modal-footer mt-8">
-      <Button class="w-full" on:click={onFormSubmit} disabled={isSubmitting}>
-        {isSubmitting ? 'Sending...' : 'Submit'}
-      </Button>
+      <div class="flex justify-end space-x-4">
+        <Button on:click={modalStore.close} disabled={isSubmitting}>Cancel</Button>
+        <Button on:click={onFormSubmit} disabled={isSubmitting}>
+          {isSubmitting ? 'Sending...' : 'Submit'}
+        </Button>
+      </div>
     </footer>
   </div>
 {/if}
