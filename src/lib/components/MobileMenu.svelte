@@ -1,6 +1,7 @@
 <script lang="ts">
   import Icon from '@iconify/svelte';
   import { getModalStore } from '@skeletonlabs/skeleton';
+  import { currentPath } from '$lib/stores/page';
   const modalStore = getModalStore();
 
   interface NavItem {
@@ -49,7 +50,9 @@
 <button
   bind:this={menuButton}
   class="text-goblin hover:text-sandcastle"
-  on:click|stopPropagation={() => (isMenuOpen = !isMenuOpen)}
+  on:click|stopPropagation={() => {
+    isMenuOpen = !isMenuOpen;
+  }}
 >
   <Icon icon="material-symbols:menu" height="30" />
 </button>
@@ -57,15 +60,17 @@
 <!-- Mobile Navigation Menu -->
 <div
   bind:this={menuContainer}
-  class="absolute left-0 right-0 top-[70px] overflow-hidden font-squil transition-all duration-500 ease-in-out md:hidden"
+  class="absolute left-0 right-0 top-[70px] overflow-hidden font-squil transition-all duration-500 ease-in-out lg:hidden"
   style="max-height: {isMenuOpen ? '300px' : '0'};"
 >
-  <nav class="border-b border-gray-800 bg-black py-4">
+  <nav class="w-screen border-b border-gray-800 bg-black p-4">
     <div class="flex flex-col gap-4">
       {#each navItems as { href, label, action }}
         <a
           {href}
-          class="text-sm text-goblin transition-colors hover:text-sandcastle"
+          class="text-sm text-goblin transition-colors hover:text-sandcastle {$currentPath === href
+            ? 'text-sandcastle'
+            : ''}"
           on:click={() => {
             isMenuOpen = false;
             if (action) action();
