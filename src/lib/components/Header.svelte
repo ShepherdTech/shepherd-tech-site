@@ -3,6 +3,8 @@
   import Button from '$components/Button.svelte';
   import { isMobile } from '$lib/stores/mobile';
   import MobileMenu from './MobileMenu.svelte';
+  import { getModalStore } from '@skeletonlabs/skeleton';
+  const modalStore = getModalStore();
 
   const navItems = [
     { href: '/', label: 'Home' },
@@ -57,7 +59,14 @@
       </div>
 
       <div>
-        <Button>Contact</Button>
+        <Button
+          on:click={() =>
+            modalStore.trigger({
+              component: 'formModal',
+              type: 'component',
+              title: "Let's Talk"
+            })}>Contact</Button
+        >
       </div>
     {/if}
   </div>

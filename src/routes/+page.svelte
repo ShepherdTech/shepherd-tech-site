@@ -6,7 +6,8 @@
   import Ribbon from '$components/Ribbon.svelte';
   import SecondaryBox from '$components/SecondaryBox.svelte';
   import WifiBox from '$components/WifiBox.svelte';
-
+  import { getModalStore } from '@skeletonlabs/skeleton';
+  const modalStore = getModalStore();
   let services = [
     {
       title: 'Professional Services',
@@ -58,7 +59,15 @@
 
     <p class="mt-4">At ShepherdTech we believe in equipping you on your</p>
     <p class="">quest for success with sustainable IT solutions.</p>
-    <Button class="font-l mb-28 mt-12 w-fit bg-transparent font-lowdrag">Let's talk</Button>
+    <Button
+      class="font-l mb-28 mt-12 w-fit bg-transparent font-lowdrag"
+      on:click={() =>
+        modalStore.trigger({
+          component: 'formModal',
+          type: 'component',
+          title: "Let's Talk"
+        })}>Let's talk</Button
+    >
   </div>
 </GreenBox>
 
