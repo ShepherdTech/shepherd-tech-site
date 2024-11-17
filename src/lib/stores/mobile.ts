@@ -1,24 +1,17 @@
 import { writable, derived } from 'svelte/store';
 import { browser } from '$app/environment';
 
-const MOBILE_BREAKPOINT = 768;
-
-function createMobileStore() {
+const createDeviceStore = (breakpoint: number) => {
   const store = writable(false);
 
   if (browser) {
-    // Handle window resize events
     const handleResize = () => {
-      store.set(window.innerWidth < MOBILE_BREAKPOINT);
+      store.set(window.innerWidth < breakpoint);
     };
 
-    // Add event listener
     window.addEventListener('resize', handleResize);
-
-    // Set initial value
     handleResize();
 
-    // Cleanup on destroy
     return {
       ...store,
       destroy() {
@@ -28,9 +21,13 @@ function createMobileStore() {
   }
 
   return store;
-}
+};
 
-export const isMobile = createMobileStore();
+const MOBILE_BREAKPOINT = 768;
+const TABLET_BREAKPOINT = 1024;
+
+export const isMobile = createDeviceStore(MOBILE_BREAKPOINT);
+export const isTablet = createDeviceStore(TABLET_BREAKPOINT);
 export const deviceTranslationKey = derived(isMobile, ($isMobile) =>
   $isMobile ? 'mobile' : 'desktop'
 );

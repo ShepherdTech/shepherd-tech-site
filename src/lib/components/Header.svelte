@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import Button from '$components/Button.svelte';
-  import { isMobile } from '$lib/stores/mobile';
+  import { isTablet } from '$lib/stores/mobile';
   import MobileMenu from './MobileMenu.svelte';
   import { getModalStore } from '@skeletonlabs/skeleton';
   const modalStore = getModalStore();
@@ -36,13 +36,13 @@
 >
   <div class="relative flex h-full w-full items-center justify-between">
     <!-- Mobile Menu Button -->
-    {#if $isMobile}
+    {#if $isTablet}
       <img src="full-logo-white.png" alt="logo" class="w-[250px]" />
       <MobileMenu />
     {/if}
 
     <!-- Desktop Navigation -->
-    {#if !$isMobile}
+    {#if !$isTablet}
       <nav class="flex gap-4 lg:gap-6">
         {#each navItems as { href, label }}
           <a
