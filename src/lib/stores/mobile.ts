@@ -7,21 +7,24 @@ function createMobileStore() {
   const store = writable(false);
 
   if (browser) {
-    // Create ResizeObserver to watch document body
-    const resizeObserver = new ResizeObserver((entries) => {
-      // We only observe the body, so there's only one entry
-      const bodyWidth = entries[0].contentRect.width;
-      store.set(bodyWidth < MOBILE_BREAKPOINT);
-    });
+    // Handle window resize events
+    const handleResize = () => {
+      store.set(window.innerWidth < MOBILE_BREAKPOINT);
+    };
 
-    // Start observing
-    resizeObserver.observe(document.body);
+    // Add event listener
+    window.addEventListener('resize', handleResize);
 
     // Set initial value
-    store.set(window.innerWidth < MOBILE_BREAKPOINT);
+    handleResize();
 
-    // Cleanup
-    return store;
+    // Cleanup on destroy
+    return {
+      ...store,
+      destroy() {
+        window.removeEventListener('resize', handleResize);
+      }
+    };
   }
 
   return store;

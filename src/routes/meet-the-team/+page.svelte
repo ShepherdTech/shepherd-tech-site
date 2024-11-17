@@ -24,7 +24,7 @@
     },
     {
       name: 'Zack Muniz',
-      // companionUri: '/team/zack-companion.png',
+      companionUri: '/team/zack-companion.png',
       profileUri: '/team/zack.png',
       profilePosition: 'bottom',
       linkedinUri: 'https://www.linkedin.com/in/zack-muniz-187690233/'
