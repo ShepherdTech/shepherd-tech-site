@@ -1,14 +1,12 @@
 <script>
-  import Button from '$components/Button.svelte';
   import GreenBox from '$components/GreenBox.svelte';
-  import SecondaryBox from '$components/SecondaryBox.svelte';
   import { t } from '$lib/translations';
+
   import { deviceTranslationKey } from '$lib/stores/mobile';
-  import { getModalStore } from '@skeletonlabs/skeleton';
   import Flag from '$components/Flag.svelte';
   import Ribbon from '$components/Ribbon.svelte';
   import ResponsiveImage from '$components/ResponsiveImage.svelte';
-  const modalStore = getModalStore();
+  import EquipmentSection from '$components/EquipmentSection.svelte';
 </script>
 
 <div class="space-y-4 md:space-y-8">
@@ -110,28 +108,5 @@
     </div>
   </GreenBox>
 
-  <SecondaryBox>
-    <div class="flex flex-col justify-between gap-y-6 p-4 md:h-[300px] md:flex-row md:p-8">
-      <div class="flex w-full flex-col md:block md:w-1/2">
-        <h2 class="m-0">{$t('so_what.contact.title')}</h2>
-        <Button
-          class="self-end"
-          on:click={() =>
-            modalStore.trigger({
-              component: 'formModal',
-              type: 'component',
-              title: "Let's Talk"
-            })}
-        >
-          {$t('so_what.contact.cta')}
-        </Button>
-      </div>
-      <ResponsiveImage
-        src="equipment.svg"
-        alt="Equipment"
-        class="relative -top-4 h-[340px]"
-        showOnMobile={false}
-      />
-    </div>
-  </SecondaryBox>
+  <EquipmentSection />
 </div>

@@ -1,3 +1,8 @@
 {
-  "copyright": "{{companyName}} @202X. All rights reserved"
+  "copyright": "{{companyName}} @202X. All rights reserved",
+
+  "contact": {
+    "title": "Let's talk about euipping you for your next adventure",
+    "cta": "Contact Us"
+  }
 }
