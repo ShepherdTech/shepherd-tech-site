@@ -37,28 +37,32 @@
 
 <GreenBox
   class="text-sandcastle"
-  style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 5.15%, rgba(0, 48, 27, 0.5) 36.32%, rgba(2, 81, 45, 0.5) 49.27%, rgba(5, 19, 14, 0.5) 86.86%);"
+  style={`background: linear-gradient(${$isMobile ? '0deg' : '90deg'}, 
+  rgba(0, 0, 0, 0.5) 0%, 
+  rgba(0, 48, 27, 0.5) 25%, 
+  rgba(2, 81, 45, 0.5) 65%, 
+  rgba(5, 19, 14, 0.5) 100%);`}
   hasBanner
   hasDiamonds
 >
-  <div class="mt-36 flex w-full flex-col items-center justify-center text-center">
+  <div class="mt-[70px] flex w-full flex-col items-center justify-center text-center md:mt-36">
     <img
       src="diy_magical_graph.svg"
       alt="Magic Graph"
-      class="absolute -left-12 hidden w-2/5 max-w-[31rem] -translate-y-32 opacity-40 md:block"
+      class="absolute -left-12 w-4/5 max-w-[15rem] translate-y-[8rem] opacity-40 md:-left-12 md:block md:w-2/5 md:max-w-[31rem] md:-translate-y-32"
     />
     <img
       src="diy_magical_graph.svg"
       alt="Magic Graph"
-      class="absolute right-6 hidden w-2/5 max-w-[31rem] translate-y-2 opacity-40 md:block"
+      class="absolute -right-[6rem] w-4/5 max-w-[15rem] -translate-y-[8rem] opacity-40 md:right-6 md:block md:w-2/5 md:max-w-[31rem] md:translate-y-2"
     />
-    <h2 class="font-squil text-xl font-light text-fireball">{$t('home.main.intro')}</h2>
-    <h1 class="font-bold">Tech support</h1>
-    <h1 class="font-bold">Wizardry</h1>
+    <p class="font-squil font-light text-fireball">{$t('home.main.intro')}</p>
+    <h1 class="mb-0 mt-2 font-bold">Tech support</h1>
+    <h1 class="m-0 font-bold">Wizardry</h1>
 
-    <p class="mt-4">{$t('home.main.subtitle')}</p>
+    <p class="mt-4 w-[80%] md:w-[50%]">{$t('home.main.subtitle')}</p>
     <Button
-      class="font-l mb-28 mt-12 w-fit bg-transparent font-lowdrag"
+      class="mb-14 mt-12 w-fit bg-transparent font-lowdrag md:mb-28 md:mt-12"
       on:click={() =>
         modalStore.trigger({
           component: 'formModal',
@@ -71,7 +75,7 @@
 
 <GreenSustainableBox />
 
-<GreenBox class="flex flex-col-reverse bg-black lg:flex-row">
+<GreenBox class="flex flex-col-reverse bg-footerbg lg:flex-row">
   <div class="flex flex-1 items-center">
     <img src="equipment.svg" alt="Treasure" class="h-auto w-full max-w-[600px]" />
   </div>
@@ -83,12 +87,15 @@
     </div>
     <div class="flex flex-col items-center justify-center text-goblin md:mt-4">
       <h1 class="text-center font-bold">Like Magic</h1>
-      <Button class="w-fit bg-transparent font-lowdrag">Learn more</Button>
+      <Button
+        class="w-fit bg-transparent font-lowdrag"
+        on:click={() => (window.location.href = '/so-what')}>Learn more</Button
+      >
     </div>
   </div>
 </GreenBox>
 
-<GreenBox class="bg-black" style="padding: 0.5rem">
+<GreenBox class="bg-footerbg" style="padding: 0.5rem">
   <GreenBox class="flex flex-col justify-center bg-black">
     <Ribbon
       title="Every Great Tech Quest Deserves the Best Services We've Got Them All"
@@ -158,7 +165,7 @@
       showOnMobile={false}
     />
     <Button
-      class="h-12 self-end text-nowrap"
+      class="h-12 w-full max-w-[8rem] self-end text-nowrap md:max-w-[14rem]"
       on:click={() => (window.location.href = '/meet-the-team')}>Yes please</Button
     >
   </div>

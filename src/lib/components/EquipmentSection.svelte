@@ -9,10 +9,10 @@
 
 <SecondaryBox>
   <div class="flex flex-col justify-between gap-y-6 p-2 md:h-[300px] md:flex-row md:p-8">
-    <div class="flex w-full flex-col justify-between md:block md:w-1/2">
+    <div class="flex h-full w-full flex-col justify-between md:w-1/2">
       <h2 class="m-0">{$t('common.contact.title')}</h2>
       <Button
-        class="self-end"
+        class="w-full max-w-[8rem] self-end md:max-w-[14rem] md:self-start"
         on:click={() =>
           modalStore.trigger({
             component: 'formModal',

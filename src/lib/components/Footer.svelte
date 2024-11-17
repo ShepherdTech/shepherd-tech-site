@@ -1,6 +1,7 @@
 <!-- src/lib/components/Footer.svelte -->
 <script lang="ts">
   import { t } from '$lib/translations/index';
+  import Icon from '@iconify/svelte';
 </script>
 
 <footer
@@ -19,23 +20,51 @@
     </span>
   </div>
 
-  <div class="flex flex-1 justify-end gap-2">
+  <!-- <div class="flex flex-1 items-center justify-end gap-2">
     <a
-      href="https://www.instagram.com/shepherdtech.se/profilecard/?igsh=MWwzNDBsajlxamN5ZQ=="
+      href="https://www.instagram.com/companyname/profilecard/"
       class="text-sm transition-colors hover:text-sandcastle"
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img src="instagram.png" alt="Instagram" class="h-5 w-5" />
+      <Icon icon="mdi:instagram" />
     </a>
     <span>·</span>
     <a
-      href="https://www.linkedin.com/company/shepherdtechse/"
+      href="https://www.linkedin.com/company/companyname/"
       class="text-sm transition-colors hover:text-sandcastle"
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img src="linkedin.png" alt="LinkedIn" class="h-5 w-5" />
+      <Icon icon="ri:linkedin-fill" />
+    </a>
+  </div> -->
+
+  <div
+    class="flex flex-1 items-center justify-end gap-2"
+    role="navigation"
+    aria-label="Social media links"
+  >
+    <a
+      href="https://www.instagram.com/shepherdtech.se/profilecard/?igsh=MWwzNDBsajlxamN5ZQ=="
+      class="text-sm transition-colors hover:text-goblin focus:text-goblin focus:outline-none focus:ring-2 focus:ring-sandcastle"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Visit our Instagram profile"
+    >
+      <Icon icon="mdi:instagram" aria-hidden="true" width={24} />
+    </a>
+
+    <span aria-hidden="true">·</span>
+
+    <a
+      href="https://www.linkedin.com/company/shepherdtechse/"
+      class="text-sm transition-colors hover:text-goblin focus:text-goblin focus:outline-none focus:ring-2 focus:ring-sandcastle"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Visit our LinkedIn profile"
+    >
+      <Icon icon="ri:linkedin-fill" aria-hidden="true" width={24} />
     </a>
   </div>
 </footer>
