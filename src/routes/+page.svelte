@@ -107,7 +107,9 @@
           <img src={service.image} alt={service.title} class="mb-4 w-64" />
           <h2 class="mb-4 text-center text-xl font-bold lg:h-24">{service.title}</h2>
           <p class="mb-auto text-center">{service.description}</p>
-          <Button class="mt-8 w-fit">Learn more</Button>
+          <Button class="mt-8 w-fit" on:click={() => (window.location.href = '/services')}
+            >Learn more</Button
+          >
         </div>
       {/each}
     </div>

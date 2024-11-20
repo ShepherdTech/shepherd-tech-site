@@ -81,12 +81,12 @@
         <img
           src="flag1.png"
           alt="Banner"
-          class="xxs:-translate-x-14 absolute top-[24px] h-6 w-6 -translate-x-12 md:h-12 md:w-12 md:-translate-x-32"
+          class="absolute top-[24px] h-6 w-6 -translate-x-12 xxs:-translate-x-14 md:h-12 md:w-12 md:-translate-x-32"
         />
         <img
           src="flag2.png"
           alt="Banner"
-          class="xxs:translate-x-14 absolute top-[24px] h-6 w-6 translate-x-12 md:h-12 md:w-12 md:translate-x-32"
+          class="absolute top-[24px] h-6 w-6 translate-x-12 xxs:translate-x-14 md:h-12 md:w-12 md:translate-x-32"
         />
         <div class="mt-2 h-1 w-full bg-shire"></div>
         <div class="mt-2 h-1 w-[60%] bg-shire md:w-[80%]"></div>
