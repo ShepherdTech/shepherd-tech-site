@@ -43,11 +43,11 @@
       linkedinUri: 'https://www.linkedin.com/in/benjamin-banister-95622b121/'
     },
     {
-      name: 'Tim Cutler',
-      // companionUri: '/team/tim-companion.png',
-      profileUri: '/team/tim.png',
+      name: 'Logan Waterman',
+      // companionUri: '/team/logan-companion.png',
+      // profileUri: '/team/logan.png',
       profilePosition: 'bottom',
-      linkedinUri: 'https://www.linkedin.com/in/timothycutler/'
+      linkedinUri: 'https://www.linkedin.com/in/logan-waterman'
     },
     {
       name: 'Ken White',
@@ -118,7 +118,7 @@
   <!-- Team -->
   <GreenBox class="bg-footerbg">
     <div
-      class="xxs:grid-cols-2 container mx-auto grid grid-cols-2 justify-between justify-items-center gap-4 px-2 py-0 md:gap-8 md:p-4 lg:grid-cols-3 lg:p-6 xl:grid-cols-4"
+      class="container mx-auto grid grid-cols-2 justify-between justify-items-center gap-4 px-2 py-0 xxs:grid-cols-2 md:gap-8 md:p-4 lg:grid-cols-3 lg:p-6 xl:grid-cols-4"
     >
       {#each team as { name, companionUri, profileUri, profilePosition, linkedinUri }}
         <div class="flex flex-col">
@@ -139,7 +139,7 @@
             >
               <img
                 class={`h-[46px] w-[46px] object-cover md:h-[150px] md:w-[150px] xl:h-[180px] xl:w-[180px] ${getProfilePositionClasses(profilePosition)} rounded-full hover:scale-105 hover:brightness-90`}
-                src={profileUri}
+                src={profileUri || '/team/default-user-icon.jpg'}
                 alt={`${name} Profile`}
               />
             </a>
