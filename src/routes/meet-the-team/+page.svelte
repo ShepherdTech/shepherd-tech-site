@@ -8,11 +8,11 @@
 
   const team = [
     {
-      name: 'Kerina Simonsen',
-      companionUri: '/team/kerina-companion.png',
-      profileUri: '/team/kerina.png',
+      name: 'Ken White',
+      companionUri: '/team/ken-companion.png',
+      profileUri: '/team/ken.png',
       profilePosition: 'bottom',
-      linkedinUri: 'https://www.linkedin.com/in/kerina-simonsen-0a797613a/'
+      linkedinUri: 'https://www.linkedin.com/in/kenneth-white-50127618/'
     },
     {
       name: 'Steve Zimmerman',
@@ -50,11 +50,11 @@
       linkedinUri: 'https://www.linkedin.com/in/logan-waterman'
     },
     {
-      name: 'Ken White',
-      companionUri: '/team/ken-companion.png',
-      profileUri: '/team/ken.png',
+      name: 'Kerina Simonsen',
+      companionUri: '/team/kerina-companion.png',
+      profileUri: '/team/kerina.png',
       profilePosition: 'bottom',
-      linkedinUri: 'https://www.linkedin.com/in/kenneth-white-50127618/'
+      linkedinUri: 'https://www.linkedin.com/in/kerina-simonsen-0a797613a/'
     },
     {
       name: 'Riley Garrett',

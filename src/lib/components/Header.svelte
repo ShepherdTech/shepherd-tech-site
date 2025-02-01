@@ -48,7 +48,7 @@
         {#each navItems as { href, label }}
           <a
             {href}
-            class="whitespace-nowrap text-sm text-goblin transition-colors hover:text-sandcastle {$currentPath ===
+            class="whitespace-nowrap font-squil text-sm text-goblin transition-colors hover:text-sandcastle {$currentPath ===
             href
               ? 'text-sandcastle'
               : ''}"

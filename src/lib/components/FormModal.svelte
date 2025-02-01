@@ -148,7 +148,9 @@
 </script>
 
 {#if $modalStore[0]}
-  <div class="modal-example-form rounded-lg border-4 border-shire bg-black p-8 text-sandcastle">
+  <div
+    class="modal-example-form rounded-lg border-4 border-shire bg-black p-8 font-squil text-sandcastle"
+  >
     <header class="mb-8 text-2xl font-bold">{$modalStore[0].title ?? '(title missing)'}</header>
 
     <form class="modal-form space-y-8" on:submit|preventDefault={onFormSubmit}>
