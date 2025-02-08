@@ -44,8 +44,8 @@
     },
     {
       name: 'Logan Waterman',
-      // companionUri: '/team/logan-companion.png',
-      // profileUri: '/team/logan.png',
+      companionUri: '/team/logan-companion.png',
+      profileUri: '/team/logan.png',
       profilePosition: 'bottom',
       linkedinUri: 'https://www.linkedin.com/in/logan-waterman'
     },
