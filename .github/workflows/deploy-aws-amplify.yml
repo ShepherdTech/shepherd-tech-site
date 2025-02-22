@@ -1,0 +1,48 @@
+name: Deploy to AWS Amplify
+on:
+  push:
+    branches:
+      - test-ci-cd-deploy # TODO: Change to main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.14.0'
+          cache: 'npm'
+
+      - name: Install Dependencies
+        uses: npm run build
+        env:
+          NODE_ENV: production
+
+      - name: Deploy to Amplify
+        run: |
+          # Install AWS Amplify CLI
+          npm install -g @aws-amplify/cli
+          export AMPLIFY_APP_ID=${{ secrets.AMPLIFY_APP_ID }}
+          export AMPLIFY_BRANCH=${{ secrets.AMPLIFY_BRANCH }}
+
+          cd build
+          zip -r ../build.zip
+          cd ..
+
+          aws amplify start-job \
+            --app-id $AMPLIFY_APP_ID \
+            --branch-name $AMPLIFY_BRANCH \
+            --job-type RELEASE \
+            --zip-file fileb://build.zip
