@@ -27,15 +27,13 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          echo "Current Directory"
-          pwd
-          echo "\nNode Version"
+          echo "NODE VERSION"
           node --version
-          echo "\nDirectory Contents"
+          echo "DIRECTORY CONTENTS"
           ls
           npm install
-          echo "\n node_modules content"
-          ls ./node_modules
+          echo "NODE_MODULES CONTENT"
+          ls -la ./node_modules
           npm install -D vite @sveltejs/vite-plugin-svelte
           npm list vite
           npm run build
