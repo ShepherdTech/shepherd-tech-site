@@ -28,6 +28,8 @@ jobs:
       - name: Install Dependencies
         run: |
           npm install
+          npm install -D vite @sveltejs/vite-plugin-svelte
+          npm list vite
           npm run build
         env:
           NODE_ENV: production
