@@ -27,6 +27,12 @@ jobs:
 
       - name: Install Dependencies
         run: |
+          echo "Current Directory"
+          pwd
+          echo "\nNode Version"
+          node --version
+          echo "\nDirectory Contents"
+          ls -la
           npm install
           npm install -D vite @sveltejs/vite-plugin-svelte
           npm list vite
