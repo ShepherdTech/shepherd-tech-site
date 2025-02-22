@@ -32,8 +32,10 @@ jobs:
           echo "\nNode Version"
           node --version
           echo "\nDirectory Contents"
-          ls -la
+          ls
           npm install
+          echo "\n node_modules content"
+          ls ./node_modules
           npm install -D vite @sveltejs/vite-plugin-svelte
           npm list vite
           npm run build
